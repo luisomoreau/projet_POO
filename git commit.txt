@@ -1,0 +1,12 @@
+Here is an example of how git commit should be for better understanding of the code.
+Reuse it when coworking on project :
+
+feat - built skeleton view
+
+View.App :
+-> initialized the main window
+-> set the main JPanel with header
+
+Issues : menu bar does not appear in window neither the main panel
+
+To do : fix the last issues to show menu bar + main panel

@@ -23,14 +23,14 @@ public class App extends JFrame{
         this.setTitle("Convertisseur de monnaie");
         this.setSize(800, 500);
 
-        // On appelle la méthode qui retournera toute notre vue.
-        this.setContentPane(initialise() );
-
-        this.setResizable(false);
+        this.setResizable(true);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JOptionPane.showMessageDialog(this, "Commencer mes achats");
+
+        // On appelle la méthode qui retournera toute notre vue.
+        this.setContentPane(initialise());
 
         //On ajoute un menu à la fenêtre principale
         //Ici est initialisée la barre de menu
@@ -56,7 +56,13 @@ public class App extends JFrame{
         //On initialise le premier JPanel qui contiendra le header, à savoir le bouton "rechercher" et le champs de recherche
         panelHeader = new JPanel();
         rechercher= new JButton("Rechercher");
-        rechercheTextField= new JTextField();
+        rechercheTextField= new JTextField("Tapez le nom du produit recherché",20);
+
+        //On ajoute les deux champs au panel Header
+        panelHeader.add(rechercher);
+        panelHeader.add(rechercheTextField);
+
+        //On ajoute le panel Header au panel principal
         mainPan.add(panelHeader, BorderLayout.NORTH);
 
         return mainPan;

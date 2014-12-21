@@ -1,0 +1,3 @@
+Todo : set utf-8 encoding for the project
+Todo : set the content visible without resizing the screen
+Todo : change main panel into a scrollable one
