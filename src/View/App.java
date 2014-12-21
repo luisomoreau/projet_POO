@@ -32,15 +32,6 @@ public class App extends JFrame{
     JButton rechercher= new JButton("Rechercher");
     JTextField rechercheTextField= new JTextField("Tapez le nom du produit recherché",20);
 
-    //Creation des champs du tableau de gauche
-    JLabel phoneName=new JLabel("Nom :");
-    JLabel phonePrice= new JLabel("Prix :");
-
-    //Creation des champs du tableau de droite
-    JCheckBox addToCartCheckBox = new JCheckBox("Ajouter au panier");
-    JButton showMoreDetails = new JButton("Détails");
-
-
     public App(){
 
         //Déclaration du titre
@@ -99,23 +90,28 @@ public class App extends JFrame{
         leftTablePanel.setBorder(border);
         tablePanel.add(leftTablePanel);
 
-        //On ajoute les champs nom et prix au panel de gauche
+        //Creation des champs du tableau de gauche
+        JLabel phoneName=new JLabel("Nom :");
+        JLabel phonePrice= new JLabel("Prix :");
         leftTablePanel.add(phoneName);
         leftTablePanel.add(phonePrice);
 
         //On ajoute le panel de droite avec la photo, l'ajout au panier et les détails
         rightTablePanel.setPreferredSize(new Dimension(360, 300));
-        rightTablePanel.setLayout(new BoxLayout(rightTablePanel, BoxLayout.PAGE_AXIS));
+        rightTablePanel.setLayout(new BorderLayout());
         rightTablePanel.setBorder(border);
         tablePanel.add(rightTablePanel);
 
         //On ajoute le panel de la photo et celui de l'ajout au panier dans le panel de droite
         ImageIcon phonePicture= new ImageIcon(new ImageIcon("img/iphone6.jpg").getImage().getScaledInstance(250, 250, Image.SCALE_DEFAULT));
         JLabel phonePictureLabel = new JLabel(phonePicture);
-        rightTablePanel.add(phonePictureLabel);
-        rightTablePanel.add(addToCartPanel);
+        rightTablePanel.add(phonePictureLabel, BorderLayout.CENTER);
+        rightTablePanel.add(addToCartPanel, BorderLayout.SOUTH);
 
         //On ajoute les différents champs ajout au panier dans le label correspondant
+        //Creation des champs du tableau de droite
+        JCheckBox addToCartCheckBox = new JCheckBox("Ajouter au panier");
+        JButton showMoreDetails = new JButton("Détails");
         addToCartPanel.add(addToCartCheckBox);
         addToCartPanel.add(showMoreDetails);
 

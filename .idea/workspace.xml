@@ -32,8 +32,8 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/View/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.135135" vertical-offset="0" max-vertical-offset="2193">
-              <caret line="90" column="45" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.4027027" vertical-offset="1687" max-vertical-offset="2125">
+              <caret line="108" column="62" selection-start-line="108" selection-start-column="62" selection-end-line="108" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -502,7 +502,7 @@
       <option name="number" value="Default" />
       <updated>1418900790444</updated>
       <workItem from="1418900806737" duration="14763000" />
-      <workItem from="1419160365019" duration="14873000" />
+      <workItem from="1419160365019" duration="15330000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1418916173462</created>
@@ -534,11 +534,17 @@
       <option name="project" value="LOCAL" />
       <updated>1419202765265</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix - rebuilt view&#10;&#10;View.App :&#10;-&gt; add all elements on view&#10;&#10;Issues : need to resize the page for the picture to appear...&#10;&#10;Todo : fix the last issues">
+      <created>1419205290667</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1419205290667</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29636000" />
+    <option name="totallyTimeSpent" value="30093000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -612,7 +618,8 @@
     <MESSAGE value="feat - built skeleton view&#10;&#10;View.App :&#10;-&gt; initialized the main window&#10;-&gt; set the main JPanel with header&#10;&#10;Issues : menu bar does not appear in window neither the main panel&#10;&#10;Todo : fix the last issues to show menu bar + main panel" />
     <MESSAGE value="fix - insert toolbar + header view&#10;&#10;View.App :&#10;-&gt; insert toolbar&#10;-&gt; insert header with rechercher button + jtextflield&#10;&#10;Issues : appear only when resizing the window size&#10;&#10;Todo : fix the last issues" />
     <MESSAGE value="fix - reorganised view's skeleton&#10;&#10;View.App :&#10;-&gt; included initialise method into app constructor&#10;&#10;Issues : main content missing... :/&#10;&#10;Todo : fix the last issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix - reorganised view's skeleton&#10;&#10;View.App :&#10;-&gt; included initialise method into app constructor&#10;&#10;Issues : main content missing... :/&#10;&#10;Todo : fix the last issues" />
+    <MESSAGE value="fix - rebuilt view&#10;&#10;View.App :&#10;-&gt; add all elements on view&#10;&#10;Issues : need to resize the page for the picture to appear...&#10;&#10;Todo : fix the last issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix - rebuilt view&#10;&#10;View.App :&#10;-&gt; add all elements on view&#10;&#10;Issues : need to resize the page for the picture to appear...&#10;&#10;Todo : fix the last issues" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -703,8 +710,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.135135" vertical-offset="0" max-vertical-offset="2193">
-          <caret line="90" column="45" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.4027027" vertical-offset="1687" max-vertical-offset="2125">
+          <caret line="108" column="62" selection-start-line="108" selection-start-column="62" selection-end-line="108" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
