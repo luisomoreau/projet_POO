@@ -3,6 +3,9 @@ package View;
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 /**
  * Created by Louis on 18/12/2014.
@@ -25,12 +28,16 @@ public class App extends JFrame{
     JMenuBar barreMenu=new JMenuBar();
     JMenu fichier=new JMenu("Fichier");
     JMenu panier=new JMenu("Panier");
-    JMenuItem voirPanier=new JMenuItem("Quitter");
-    JMenuItem quitter= new JMenuItem("Voir panier");
+    JMenuItem voirPanier=new JMenuItem("Voir panier");
+    JMenuItem quitter= new JMenuItem("Quitter");
 
     //Creation des champs de recherche
     JButton rechercher= new JButton("Rechercher");
     JTextField rechercheTextField= new JTextField("Tapez le nom du produit recherché",20);
+
+    //Création d'un tableau comprenant les telephone du panier
+    public ArrayList<Integer> phoneCart = new ArrayList<Integer>();
+    int nbarticle = phoneCart.size();
 
     public App(){
 
@@ -65,6 +72,7 @@ public class App extends JFrame{
         panier.add(voirPanier);
 
         // On appelle la méthode qui retournera toute notre vue.
+        //this.setContentPane(mainPan);
         this.add(mainPan);
 
         //On ajoute le panel recherche au panel principal
@@ -115,5 +123,66 @@ public class App extends JFrame{
         addToCartPanel.add(addToCartCheckBox);
         addToCartPanel.add(showMoreDetails);
 
+        //On ajoute un écouteur sur le JMenuItem Quitter
+        ListenerQuitter listenerQuitter = new ListenerQuitter();
+        quitter.addActionListener(listenerQuitter);
+
+        //On ajoute un écouteur sur le JMenuItem Panier
+        ListenerCart listenerCart = new ListenerCart();
+        voirPanier.addActionListener(listenerCart);
+
+        //On ajoute un écouteur sur le JTextFlied Rechercher
+        ListenerSearch listenerSearch = new ListenerSearch();
+        rechercheTextField.addActionListener(listenerSearch);
+    }
+
+    //Classe interne permettant de quitter l'application
+    public class ListenerQuitter implements ActionListener {
+        public void actionPerformed(ActionEvent arg0){
+            {
+                if(nbarticle==0)
+                {
+                    System.exit(0);
+                }
+                else
+                {
+                    int i = JOptionPane.showConfirmDialog(null, " Il y a des articles présents dans votre panier. \nSouhaitez vous quitter l'application ?", "Quitter", JOptionPane.YES_NO_OPTION);
+                    if( i == 0)
+                    {
+                        System.exit(0);
+                    }
+                }
+            }
+        }
+    }
+
+    //Classe interne permettant d'afficher le panier
+    public class ListenerCart implements ActionListener
+    {
+        public void actionPerformed(ActionEvent arg0)
+        {
+            if(nbarticle!=0){
+                JFrame window = new JFrame();
+                JPanel panProduit = new JPanel();
+                Border borderProduit = BorderFactory.createLineBorder(Color.BLACK);
+                window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                JScrollPane scrollPane= new JScrollPane(panProduit);
+
+                window.setTitle("Votre panier");
+                window.setSize(800, 600);
+                window.setLayout(new BorderLayout());
+            }else
+            {
+                JOptionPane.showMessageDialog(null,"Le panier est vide !");
+            }
+        }
+    }
+
+    //Classe interne permettant d'afficher la recherche
+    public class ListenerSearch implements ActionListener
+    {
+        public void actionPerformed(ActionEvent arg0) {
+            JOptionPane.showMessageDialog(null,"Test recherche");
+        }
     }
 }
