@@ -13,33 +13,62 @@ public class Bdd {
     String passwd = "mysql";
     Connection connexion=null;
 
-    public ArrayList<String> getPhones(){
-        String requetePhone = "SELECT * FROM telephone";
-        ArrayList<String> ensemblePhone = new ArrayList();
+    public void connect(){
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            connexion = DriverManager.getConnection(url, login, passwd);
+        }catch (ClassNotFoundException e) {
+        e.printStackTrace();
+        } catch (SQLException e) {
+        e.printStackTrace();
+        }
+    }
+    //Ici, on compte le nombre de telephone dans la base de données et on enregistre les id dans une liste
+    public ArrayList<Integer> getNumberOfPhones(){
+        String requeteNumberOfPhones = "SELECT phoneID from telephone GROUP BY phoneID";
+        connect();
+        ArrayList<Integer> numberOfPhones = new ArrayList<Integer>();
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            connexion = DriverManager.getConnection(url, login, passwd);
+            Statement stmt = connexion.createStatement();
+            ResultSet resultset = stmt.executeQuery(requeteNumberOfPhones);
+
+            while (resultset.next()) {
+                numberOfPhones.add(resultset.getInt(1));
+            }
+        }catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return numberOfPhones;
+    }
+
+    public ArrayList<String> getPhonePropreties(Integer idPhone){
+        String requetePhone = "SELECT * FROM telephone WHERE phoneID="+idPhone;
+        ArrayList<String> phonePropreties = new ArrayList();
         try {
             Class.forName("com.mysql.jdbc.Driver");
             connexion = DriverManager.getConnection(url, login, passwd);
             Statement stmt = connexion.createStatement();
             ResultSet resultset = stmt.executeQuery(requetePhone);
-
-            //ArrayList ensemblePhone = new ArrayList();
-
             while (resultset.next()){
-                ensemblePhone.add(resultset.getString(0));
-                ensemblePhone.add(resultset.getString(1));
-                ensemblePhone.add(resultset.getString(2));
-                ensemblePhone.add(resultset.getString(3));
-                ensemblePhone.add(resultset.getString(4));
-                ensemblePhone.add(resultset.getString(5));
+
+                phonePropreties.add(resultset.getString(1));
+                phonePropreties.add(resultset.getString(2));
+                phonePropreties.add(resultset.getString(3));
+                phonePropreties.add(resultset.getString(4));
+                phonePropreties.add(resultset.getString(5));
+                phonePropreties.add(resultset.getString(6));
             }
-            return ensemblePhone;
+            return phonePropreties;
 
         }catch (ClassNotFoundException e) {
             e.printStackTrace();
-            System.out.println("et merde");
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return ensemblePhone;
+        return phonePropreties;
     }
 }

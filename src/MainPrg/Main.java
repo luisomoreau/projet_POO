@@ -13,11 +13,12 @@ public class Main {
        // App app=new App();
         Bdd bdd=new Bdd();
 
-        ArrayList<String > phones = bdd.getPhones();
+        ArrayList<Integer> phonesList = bdd.getNumberOfPhones();
+        ArrayList<String> phones = bdd.getPhonePropreties(1);
 
         for(String elem: phones)
         {
-            System.out.println (elem);
+            System.out.println(elem);
         }
 
     }
