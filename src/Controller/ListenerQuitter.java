@@ -26,7 +26,7 @@ public class ListenerQuitter implements ActionListener {
             }
             else
             {
-                int i = JOptionPane.showConfirmDialog(null, " Il y a des articles présents dans votre panier. \nSouhaitez vous quitter l'application ?", "Quitter", JOptionPane.YES_NO_OPTION);
+                int i = JOptionPane.showConfirmDialog(null, " Il y a des articles presents dans votre panier. \nSouhaitez vous quitter l'application ?", "Quitter", JOptionPane.YES_NO_OPTION);
                 if( i == 0)
                 {
                     System.exit(0);
