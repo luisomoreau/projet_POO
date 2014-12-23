@@ -71,4 +71,104 @@ public class Bdd {
         }
         return phonePropreties;
     }
+
+    public String getPhoneName(Integer idPhone){
+        String requetePhoneName = "SELECT phoneName FROM telephone WHERE phoneID="+idPhone;
+        String phoneName = "";
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            connexion = DriverManager.getConnection(url, login, passwd);
+            Statement stmt = connexion.createStatement();
+            ResultSet resultset = stmt.executeQuery(requetePhoneName);
+            while (resultset.next()){
+            phoneName = resultset.getString(1);
+            return phoneName;}
+
+        }catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return phoneName;
+    }
+
+    public String getPhonePrice(Integer idPhone){
+        String requetePhonePrice = "SELECT phonePrice FROM telephone WHERE phoneID="+idPhone;
+        String phonePrice = "";
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            connexion = DriverManager.getConnection(url, login, passwd);
+            Statement stmt = connexion.createStatement();
+            ResultSet resultset = stmt.executeQuery(requetePhonePrice);
+            while (resultset.next()){
+                phonePrice = resultset.getString(1);
+                return phonePrice;}
+
+        }catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return phonePrice;
+    }
+
+    public String getPhonePicture(Integer idPhone){
+        String requetePhonePicture = "SELECT phonePicturePath FROM telephone WHERE phoneID="+idPhone;
+        String phonePicture = "";
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            connexion = DriverManager.getConnection(url, login, passwd);
+            Statement stmt = connexion.createStatement();
+            ResultSet resultset = stmt.executeQuery(requetePhonePicture);
+            while (resultset.next()){
+                phonePicture = resultset.getString(1);
+                return phonePicture;}
+
+        }catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return phonePicture;
+    }
+
+    public String getPhoneScreenSize(Integer idPhone){
+        String requetePhoneScreenSize = "SELECT phoneScreenSize FROM telephone WHERE phoneID="+idPhone;
+        String phoneScreenSize = "";
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            connexion = DriverManager.getConnection(url, login, passwd);
+            Statement stmt = connexion.createStatement();
+            ResultSet resultset = stmt.executeQuery(requetePhoneScreenSize);
+            while (resultset.next()){
+                phoneScreenSize = resultset.getString(1);
+                return phoneScreenSize;}
+
+        }catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return phoneScreenSize;
+    }
+
+    public String getPhoneBrand(Integer idPhone){
+        String requetePhoneBrand = "SELECT phoneBrand FROM telephone WHERE phoneID="+idPhone;
+        String phoneBrand = "";
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            connexion = DriverManager.getConnection(url, login, passwd);
+            Statement stmt = connexion.createStatement();
+            ResultSet resultset = stmt.executeQuery(requetePhoneBrand);
+            while (resultset.next()){
+                phoneBrand = resultset.getString(1);
+                return phoneBrand;}
+
+        }catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return phoneBrand;
+    }
 }

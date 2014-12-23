@@ -1,5 +1,7 @@
 package View;
 
+import Model.Bdd;
+
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
@@ -13,27 +15,8 @@ import java.util.ArrayList;
 
 public class App extends JFrame{
 
-    //Creation des panels
-    JPanel mainPan = new JPanel();
-    JPanel panelHeader = new JPanel();
-    JPanel tablePanel = new JPanel();
-    JPanel leftTablePanel = new JPanel();
-    JPanel rightTablePanel = new JPanel();
-    JPanel addToCartPanel = new JPanel();
-
-    //Creation de la scrollbar
-    JScrollPane scrollPanel= new JScrollPane(mainPan);
-
-    //Création du menu
-    JMenuBar barreMenu=new JMenuBar();
-    JMenu fichier=new JMenu("Fichier");
-    JMenu panier=new JMenu("Panier");
-    JMenuItem voirPanier=new JMenuItem("Voir panier");
-    JMenuItem quitter= new JMenuItem("Quitter");
-
-    //Creation des champs de recherche
-    JButton rechercher= new JButton("Rechercher");
-    JTextField rechercheTextField= new JTextField("Tapez le nom du produit recherché",20);
+    Bdd bdd=new Bdd();
+    ArrayList<Integer> phonesList = bdd.getNumberOfPhones();
 
     //Création d'un tableau comprenant les telephone du panier
     public ArrayList<Integer> phoneCart = new ArrayList<Integer>();
@@ -54,11 +37,17 @@ public class App extends JFrame{
         this.setLayout(new BorderLayout());
         //JOptionPane.showMessageDialog(this, "Commencer mes achats");
 
-        //On rend la fenetre scrollable
-        this.add(scrollPanel);
+
+        //Création du menu
+        JMenuBar barreMenu=new JMenuBar();
+        JMenu fichier=new JMenu("Fichier");
+        JMenu panier=new JMenu("Panier");
+        JMenuItem voirPanier=new JMenuItem("Voir panier");
+        JMenuItem quitter= new JMenuItem("Quitter");
 
         //On ajoute un menu à la fenêtre principale
         this.setJMenuBar(barreMenu);
+
         //On ajoute les deux onglets "fichier" et "panier"
         barreMenu.add(fichier);
         barreMenu.add(panier);
@@ -71,12 +60,23 @@ public class App extends JFrame{
         fichier.add(quitter);
         panier.add(voirPanier);
 
+        //Creation des panels
+        JPanel mainPan = new JPanel();
+        JPanel panelHeader = new JPanel();
+        JPanel tablePanel = new JPanel();
+
         // On appelle la méthode qui retournera toute notre vue.
         //this.setContentPane(mainPan);
         this.add(mainPan);
 
+        mainPan.setLayout(new BorderLayout());
+
         //On ajoute le panel recherche au panel principal
         mainPan.add(panelHeader, BorderLayout.NORTH);
+
+        //Creation des champs de recherche
+        JButton rechercher= new JButton("Rechercher");
+        JTextField rechercheTextField= new JTextField("Tapez le nom du produit voulu",20);
 
         //On ajoute les champs de recherche au panel Header
         panelHeader.add(rechercher);
@@ -89,39 +89,72 @@ public class App extends JFrame{
         tablePanel.setBorder(border);
         tablePanel.setLayout(new GridLayout(0,2));
 
-        //On ajoute le panel des produits au panel principal
-        mainPan.add(tablePanel, BorderLayout.CENTER);
+        for(int i=1; i<=phonesList.size(); i++){
 
-        //On ajoute le panel de gauche avec le nom et le prix de l'article en définissant sa taille et sa position
-        leftTablePanel.setPreferredSize(new Dimension(360, 300 ));
-        leftTablePanel.setLayout(new BoxLayout(leftTablePanel, BoxLayout.PAGE_AXIS));
-        leftTablePanel.setBorder(border);
-        tablePanel.add(leftTablePanel);
+            JPanel leftTablePanel = new JPanel();
 
-        //Creation des champs du tableau de gauche
-        JLabel phoneName=new JLabel("Nom :");
-        JLabel phonePrice= new JLabel("Prix :");
-        leftTablePanel.add(phoneName);
-        leftTablePanel.add(phonePrice);
+            //On ajoute le panel de gauche avec le nom et le prix de l'article en définissant sa taille et sa position
+            leftTablePanel.setPreferredSize(new Dimension(360, 300 ));
+            leftTablePanel.setLayout(new BoxLayout(leftTablePanel, BoxLayout.PAGE_AXIS));
+            leftTablePanel.setBorder(border);
 
-        //On ajoute le panel de droite avec la photo, l'ajout au panier et les détails
-        rightTablePanel.setPreferredSize(new Dimension(360, 300));
-        rightTablePanel.setLayout(new BorderLayout());
-        rightTablePanel.setBorder(border);
-        tablePanel.add(rightTablePanel);
 
-        //On ajoute le panel de la photo et celui de l'ajout au panier dans le panel de droite
-        ImageIcon phonePicture= new ImageIcon(new ImageIcon("img/iphone6.jpg").getImage().getScaledInstance(250, 250, Image.SCALE_DEFAULT));
-        JLabel phonePictureLabel = new JLabel(phonePicture);
-        rightTablePanel.add(phonePictureLabel, BorderLayout.CENTER);
-        rightTablePanel.add(addToCartPanel, BorderLayout.SOUTH);
+            //Creation des champs du tableau de gauche
+            JLabel phoneName=new JLabel("Nom :"+bdd.getPhoneName(i));
+            JLabel phonePrice= new JLabel("Prix :"+bdd.getPhonePrice(i)+" euros");
 
-        //On ajoute les différents champs ajout au panier dans le label correspondant
-        //Creation des champs du tableau de droite
-        JCheckBox addToCartCheckBox = new JCheckBox("Ajouter au panier");
-        JButton showMoreDetails = new JButton("Détails");
-        addToCartPanel.add(addToCartCheckBox);
-        addToCartPanel.add(showMoreDetails);
+
+            JPanel rightTablePanel = new JPanel();
+
+            //On ajoute le panel de droite avec la photo, l'ajout au panier et les détails
+            rightTablePanel.setPreferredSize(new Dimension(360, 300));
+            rightTablePanel.setLayout(new BorderLayout());
+            rightTablePanel.setBorder(border);
+
+
+            //On ajoute le panel de la photo et celui de l'ajout au panier dans le panel de droite
+            ImageIcon phonePicture= new ImageIcon(new ImageIcon("img/"+bdd.getPhonePicture(i)).getImage().getScaledInstance(250, 250, Image.SCALE_DEFAULT));
+            JLabel phonePictureLabel = new JLabel(phonePicture);
+
+            JPanel addToCartPanel = new JPanel();
+            //On ajoute les différents champs ajout au panier dans le label correspondant
+            //Creation des champs du tableau de droite
+            JCheckBox addToCartCheckBox = new JCheckBox("Ajouter au panier");
+            JButton showMoreDetails = new JButton("Details");
+            addToCartPanel.add(addToCartCheckBox);
+            addToCartPanel.add(showMoreDetails);
+
+            leftTablePanel.add(phoneName);
+            leftTablePanel.add(phonePrice);
+
+            rightTablePanel.add(phonePictureLabel, BorderLayout.CENTER);
+            rightTablePanel.add(addToCartPanel, BorderLayout.SOUTH);
+
+            tablePanel.add(leftTablePanel);
+            tablePanel.add(rightTablePanel);
+
+            //On ajoute le panel des produits au panel principal
+            mainPan.add(tablePanel, BorderLayout.CENTER);
+
+            //Bouton detail :
+            final int finalI = i;
+            showMoreDetails.addActionListener(new ActionListener() {
+                                                  public void actionPerformed(ActionEvent e) {
+
+                                                      JFrame detailWindow = new JFrame();
+                                                      String message = "Details du telephone :\n - nom : "+bdd.getPhoneName(finalI)+" \n- prix : "+bdd.getPhonePrice(finalI)+" euros \n -taille de l'ecran : "+bdd.getPhoneScreenSize(finalI)+" pouces \n- marque commerciale : "+bdd.getPhoneBrand(finalI);
+                                                      JOptionPane.showMessageDialog(detailWindow, message);
+                                                  }
+                                              }
+            );
+
+        }
+
+        //Creation de la scrollbar
+        JScrollPane scrollPanel = new JScrollPane(mainPan);
+        //On rend la fenetre scrollable
+        this.add(scrollPanel);
+
 
         //On ajoute un écouteur sur le JMenuItem Quitter
         ListenerQuitter listenerQuitter = new ListenerQuitter();

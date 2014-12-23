@@ -10,16 +10,20 @@ import java.util.ArrayList;
  */
 public class Main {
     public static void main(String[] args) {
-       // App app=new App();
-        Bdd bdd=new Bdd();
+        System.setProperty("file.encoding", "UTF-8");
 
+        App app=new App();
+        //Bdd bdd=new Bdd();
+/*
         ArrayList<Integer> phonesList = bdd.getNumberOfPhones();
-        ArrayList<String> phones = bdd.getPhonePropreties(1);
 
-        for(String elem: phones)
-        {
-            System.out.println(elem);
-        }
-
+        for(int i=0; i<phonesList.size(); i++){
+            System.out.println(bdd.getPhoneName(i));
+            System.out.println(bdd.getPhonePrice(i));
+            System.out.println(bdd.getPhonePicture(i));
+            System.out.println(bdd.getPhoneScreenSize(i));
+            System.out.println(bdd.getPhoneBrand(i));
+            System.out.println("");
+        }*/
     }
 }

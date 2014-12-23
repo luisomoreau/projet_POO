@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b5963f2-4bb9-4d39-a01a-555dcabde67f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Model/Phone.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Model/PhoneList.java" />
+    <list default="true" id="8b5963f2-4bb9-4d39-a01a-555dcabde67f" name="Default" comment="feat - completed view + model&#10;&#10;Model.Bdd :&#10;-&gt; got db info in view&#10;-&gt; added iteration in view&#10;-&gt; added detail popup&#10;-&gt; added sql dump&#10;-&gt; tests&#10;&#10;Issues : view only well appear when resizing the screen... still don't know why... :/&#10;&#10;Todo : move listeners into the controller package &#10;&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Projet_POO/View/App$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Projet_POO/View/App$1_conflict-20141223-004938.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Projet_POO/View/App$ListenerCart.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Projet_POO/View/App$ListenerQuitter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Projet_POO/View/App$ListenerSearch.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Projet_POO/View/App.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Projet_POO/Model/Bdd.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Projet_POO/MainPrg/Main.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Projet_POO/Model/Phone.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Projet_POO/Model/PhoneList.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/galaxy_s3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/galaxy_s4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/iphone6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/lg_g3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/nokia_3310.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/one_plus.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/telephone.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/App.java" afterPath="$PROJECT_DIR$/src/View/App.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Bdd.java" afterPath="$PROJECT_DIR$/src/Model/Bdd.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainPrg/Main.java" afterPath="$PROJECT_DIR$/src/MainPrg/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/PhoneList.java" afterPath="$PROJECT_DIR$/src/Model/PhoneList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Projet_POO_Louis_MOREAU.iws" />
@@ -67,16 +87,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/View/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="3298">
-              <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.33333334" vertical-offset="2334" max-vertical-offset="3859">
+              <caret line="144" column="246" selection-start-line="144" selection-start-column="246" selection-end-line="144" selection-end-column="246" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1168#1177#0" expanded="true" />
-                <element signature="e#6865#6866#0" expanded="true" />
-                <element signature="e#6941#6942#0" expanded="true" />
+                <element signature="e#492#501#0" expanded="true" />
+                <element signature="e#5062#5779#0" expanded="true" />
+                <element signature="e#5778#5779#0" expanded="true" />
+                <element signature="e#8187#8188#0" expanded="true" />
+                <element signature="e#8263#8264#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,34 +107,31 @@
       <file leaf-file-name="Bdd.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/Bdd.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.8245614" vertical-offset="712" max-vertical-offset="1360">
-              <caret line="48" column="68" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="68" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1857" max-vertical-offset="3060">
+              <caret line="115" column="61" selection-start-line="115" selection-start-column="61" selection-end-line="115" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#909#918#0" expanded="true" />
-                <marker date="1419280941909" expanded="true" signature="784:830" placeholder="SELECT phone..telephone..." />
-                <marker date="1419280941909" expanded="true" signature="1596:1619" placeholder="SELECT * FRO..telephone..." />
-                <marker date="1419280941909" expanded="true" signature="1596:1634" placeholder="SELECT * FRO..telephone..." />
+                <marker date="1419285061756" expanded="true" signature="784:830" placeholder="SELECT phone..telephone..." />
+                <marker date="1419285061756" expanded="true" signature="1596:1619" placeholder="SELECT * FRO..telephone..." />
+                <marker date="1419285061756" expanded="true" signature="1596:1634" placeholder="SELECT * FRO..telephone..." />
+                <marker date="1419285061756" expanded="true" signature="2704:2750" placeholder="SELECT phone..telephone..." />
+                <marker date="1419285061756" expanded="true" signature="3452:3499" placeholder="SELECT phone..telephone..." />
+                <marker date="1419285061756" expanded="true" signature="4218:4271" placeholder="SELECT phone..telephone..." />
+                <marker date="1419285061756" expanded="true" signature="5006:5052" placeholder="SELECT phone..telephone..." />
+                <marker date="1419285061756" expanded="true" signature="5006:5058" placeholder="SELECT phone..telephone..." />
+                <marker date="1419285061756" expanded="true" signature="5798:5844" placeholder="SELECT phone..telephone..." />
+                <marker date="1419285061756" expanded="true" signature="5798:5845" placeholder="SELECT phone..telephone..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PhoneList.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PhoneList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/PhoneList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45945945" vertical-offset="0" max-vertical-offset="370">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="git commit.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/git commit.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -131,8 +150,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainPrg/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="527">
-              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="595">
+              <caret line="24" column="51" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,11 +159,41 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="encodings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scope_settings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/scopes/scope_settings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Projet_POO.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Projet_POO.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Phone.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/Phone.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1360">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1360">
+              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
               <folding>
                 <element signature="e#842#843#0" expanded="true" />
                 <element signature="e#872#873#0" expanded="true" />
@@ -195,13 +244,15 @@
       <list>
         <option value="$PROJECT_DIR$/git commit.txt" />
         <option value="$PROJECT_DIR$/Todo.txt" />
-        <option value="$PROJECT_DIR$/src/View/App.java" />
         <option value="$PROJECT_DIR$/src/Model/TestBDD.java" />
         <option value="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-        <option value="$PROJECT_DIR$/src/Model/Bdd.java" />
-        <option value="$PROJECT_DIR$/src/MainPrg/Main.java" />
         <option value="$PROJECT_DIR$/src/Model/Phone.java" />
         <option value="$PROJECT_DIR$/src/Model/PhoneList.java" />
+        <option value="$PROJECT_DIR$/src/Model/Bdd.java" />
+        <option value="dbtable:/789dccab/1ece06c3-1ca4-4c64-87b8-c7c7075d03f4/projetPOO..telephone" />
+        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
+        <option value="$PROJECT_DIR$/src/MainPrg/Main.java" />
+        <option value="$PROJECT_DIR$/src/View/App.java" />
       </list>
     </option>
   </component>
@@ -327,6 +378,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Projet_POO_Louis_MOREAU" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Projet_POO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -339,11 +404,11 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$APPLICATION_CONFIG_DIR$/jdbc-drivers/mysql-connector-java-5.1.31-bin.jar!/" />
-    <property name="options.lastSelected" value="settings.github" />
+    <property name="options.lastSelected" value="preferences.pathVariables" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -645,7 +710,7 @@
       <option name="number" value="Default" />
       <updated>1418900790444</updated>
       <workItem from="1418900806737" duration="14763000" />
-      <workItem from="1419160365019" duration="35475000" />
+      <workItem from="1419160365019" duration="47140000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1418916173462</created>
@@ -701,11 +766,17 @@
       <option name="project" value="LOCAL" />
       <updated>1419254886521</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat -created the model phone class&#10;&#10;Model.Bdd :&#10;-&gt; get number of phones&#10;-&gt; get a list of phone's characteristics&#10;-&gt; tests&#10;&#10;Issues : &#10;&#10;Todo : &#10;fix the last issues&#10;&#10;Add iteration to show multiple product on view">
+      <created>1419281992477</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1419281992477</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50238000" />
+    <option name="totallyTimeSpent" value="61903000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -729,7 +800,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47960848" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -742,12 +813,12 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789558" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26701966" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26701966" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -783,7 +854,8 @@
     <MESSAGE value="fix - Insert all variables into the app constructor view&#10;&#10;View.App :&#10;-&gt; insert variables into the constructor for futur iteration with multiple products&#10;&#10;Issues : need to resize the page for the picture to appear...&#10;&#10;Todo : fix the last issues" />
     <MESSAGE value="feat -add listeners in view&#10;&#10;View.App :&#10;-&gt; add listener quitter&#10;-&gt; add listener voirPanier&#10;-&gt; add listener Rechercher&#10;&#10;Model.BddConnexion :&#10;-&gt;Created class&#10;&#10;Issues : need to resize the page for the picture to appear...&#10;&#10;Todo : &#10;fix the last issues&#10;Connect the database and get product in an array list&#10;Add iteration to show multiple product" />
     <MESSAGE value="feat -created the database model&#10;&#10;Model.Bdd :&#10;-&gt; add created the database model&#10;-&gt; fix driver dependencies (.idea/libraries)&#10;&#10;Issues : fix sql errors to get results in an arraylist...&#10;&#10;Todo : &#10;fix the last issues&#10;Connect the database and get product in an array list&#10;Add iteration to show multiple product on view" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat -created the database model&#10;&#10;Model.Bdd :&#10;-&gt; add created the database model&#10;-&gt; fix driver dependencies (.idea/libraries)&#10;&#10;Issues : fix sql errors to get results in an arraylist...&#10;&#10;Todo : &#10;fix the last issues&#10;Connect the database and get product in an array list&#10;Add iteration to show multiple product on view" />
+    <MESSAGE value="feat -created the model phone class&#10;&#10;Model.Bdd :&#10;-&gt; get number of phones&#10;-&gt; get a list of phone's characteristics&#10;-&gt; tests&#10;&#10;Issues : &#10;&#10;Todo : &#10;fix the last issues&#10;&#10;Add iteration to show multiple product on view" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat -created the model phone class&#10;&#10;Model.Bdd :&#10;-&gt; get number of phones&#10;-&gt; get a list of phone's characteristics&#10;-&gt; tests&#10;&#10;Issues : &#10;&#10;Todo : &#10;fix the last issues&#10;&#10;Add iteration to show multiple product on view" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -800,9 +872,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1168#1177#0" expanded="true" />
-            <element signature="e#6865#6866#0" expanded="true" />
-            <element signature="e#6941#6942#0" expanded="true" />
+            <element signature="e#492#501#0" expanded="true" />
+            <element signature="e#5062#5779#0" expanded="true" />
+            <element signature="e#5778#5779#0" expanded="true" />
+            <element signature="e#8187#8188#0" expanded="true" />
+            <element signature="e#8263#8264#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -869,19 +943,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="3298">
-          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1168#1177#0" expanded="true" />
-            <element signature="e#6865#6866#0" expanded="true" />
-            <element signature="e#6941#6942#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_67/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1934" max-vertical-offset="53618">
@@ -914,34 +975,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainPrg/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="527">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Bdd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8245614" vertical-offset="712" max-vertical-offset="1360">
-          <caret line="48" column="68" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#909#918#0" expanded="true" />
-            <marker date="1419280941909" expanded="true" signature="784:830" placeholder="SELECT phone..telephone..." />
-            <marker date="1419280941909" expanded="true" signature="1596:1619" placeholder="SELECT * FRO..telephone..." />
-            <marker date="1419280941909" expanded="true" signature="1596:1634" placeholder="SELECT * FRO..telephone..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Phone.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1360">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1360">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
           <folding>
             <element signature="e#842#843#0" expanded="true" />
             <element signature="e#872#873#0" expanded="true" />
@@ -973,9 +1010,95 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/PhoneList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45945945" vertical-offset="0" max-vertical-offset="370">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Bdd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1857" max-vertical-offset="3060">
+          <caret line="115" column="61" selection-start-line="115" selection-start-column="61" selection-end-line="115" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#909#918#0" expanded="true" />
+            <marker date="1419285061756" expanded="true" signature="784:830" placeholder="SELECT phone..telephone..." />
+            <marker date="1419285061756" expanded="true" signature="1596:1619" placeholder="SELECT * FRO..telephone..." />
+            <marker date="1419285061756" expanded="true" signature="1596:1634" placeholder="SELECT * FRO..telephone..." />
+            <marker date="1419285061756" expanded="true" signature="2704:2750" placeholder="SELECT phone..telephone..." />
+            <marker date="1419285061756" expanded="true" signature="3452:3499" placeholder="SELECT phone..telephone..." />
+            <marker date="1419285061756" expanded="true" signature="4218:4271" placeholder="SELECT phone..telephone..." />
+            <marker date="1419285061756" expanded="true" signature="5006:5052" placeholder="SELECT phone..telephone..." />
+            <marker date="1419285061756" expanded="true" signature="5006:5058" placeholder="SELECT phone..telephone..." />
+            <marker date="1419285061756" expanded="true" signature="5798:5844" placeholder="SELECT phone..telephone..." />
+            <marker date="1419285061756" expanded="true" signature="5798:5845" placeholder="SELECT phone..telephone..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/789dccab/1ece06c3-1ca4-4c64-87b8-c7c7075d03f4/projetPOO..telephone">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/lg_g3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/scopes/scope_settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="383">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_POO.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainPrg/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="595">
+          <caret line="24" column="51" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="2334" max-vertical-offset="3859">
+          <caret line="144" column="246" selection-start-line="144" selection-start-column="246" selection-end-line="144" selection-end-column="246" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#492#501#0" expanded="true" />
+            <element signature="e#5062#5779#0" expanded="true" />
+            <element signature="e#5778#5779#0" expanded="true" />
+            <element signature="e#8187#8188#0" expanded="true" />
+            <element signature="e#8263#8264#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
