@@ -1,5 +1,8 @@
 package View;
 
+import Controller.ListenerCart;
+import Controller.ListenerQuitter;
+import Controller.ListenerSearch;
 import Model.Bdd;
 
 import javax.swing.*;
@@ -16,17 +19,55 @@ import java.util.ArrayList;
 public class App extends JFrame{
 
     Bdd bdd=new Bdd();
+
     ArrayList<Integer> phonesList = bdd.getNumberOfPhones();
 
-    //Creation des champs de recherche
-    JButton rechercher= new JButton("Rechercher");
-    JTextField rechercheTextField= new JTextField("Tapez le nom du produit voulu",20);
+    //Creation des panels
+    private JPanel mainPan;
+    private JPanel panelHeader;
+    private JPanel tablePanel;
+    private JPanel rightTablePanel;
+    private JPanel leftTablePanel;
+    private JPanel addToCartPanel;
+
+    //Creation de la barre de menu
+    private JMenuBar barreMenu;
+
+    //Creation du menu
+    private JMenu fichier;
+    private JMenu panier;
+
+    //Création des items de menu
+    private JMenuItem quitter;
+    private JMenuItem voirPanier;
+
+    //Creation des labels
+    private JLabel phoneName;
+    private JLabel phonePrice;
+    private JLabel phonePictureLabel;
+
+    //Creation des images
+    private ImageIcon phonePicture;
+
+    //Creation des boutons
+    private JButton rechercher;
+    private JButton showMoreDetails;
+
+    //Creation des JTextField
+    private JTextField rechercheTextField;
+
+    //Creation des bordures
+    private Border border;
+
+    //Creation de la scollbar
+    private JScrollPane scrollPanel;
 
     //Création d'un tableau comprenant les telephone du panier
-    public ArrayList<Integer> phoneCart = new ArrayList<Integer>();
-    int nbarticle = phoneCart.size();
+    private ArrayList<Integer> phoneCart = new ArrayList<Integer>();
+    private int nbarticle = phoneCart.size();
 
-    public App(){
+    public void init(){
+        System.out.println(phoneCart.size()+" / "+nbarticle);
 
         //Déclaration du titre
         this.setTitle("Projet POO : e-Commerce");
@@ -42,12 +83,12 @@ public class App extends JFrame{
         //JOptionPane.showMessageDialog(this, "Commencer mes achats");
 
 
-        //Création du menu
-        JMenuBar barreMenu=new JMenuBar();
-        JMenu fichier=new JMenu("Fichier");
-        JMenu panier=new JMenu("Panier");
-        JMenuItem voirPanier=new JMenuItem("Voir panier");
-        JMenuItem quitter= new JMenuItem("Quitter");
+        //Création de tous les elements du menu
+        barreMenu=new JMenuBar();
+        fichier=new JMenu("Fichier");
+        panier=new JMenu("Panier");
+        voirPanier=new JMenuItem("Voir panier");
+        quitter= new JMenuItem("Quitter");
 
         //On ajoute un menu à la fenêtre principale
         this.setJMenuBar(barreMenu);
@@ -64,16 +105,15 @@ public class App extends JFrame{
         fichier.add(quitter);
         panier.add(voirPanier);
 
-        //Creation des panels
-        JPanel mainPan = new JPanel();
-        JPanel panelHeader = new JPanel();
-        JPanel tablePanel = new JPanel();
-
-        // On appelle la méthode qui retournera toute notre vue.
-        //this.setContentPane(mainPan);
+        //Creation du panel principal on lui associe un BorderLayout et on l'insert dans la fenetre
+        mainPan = new JPanel();
+        mainPan.setLayout(new BorderLayout());
         this.add(mainPan);
 
-        mainPan.setLayout(new BorderLayout());
+        //Creation des elements de recherche
+        panelHeader = new JPanel();
+        rechercher= new JButton("Rechercher");
+        rechercheTextField= new JTextField("Tapez le nom du produit voulu",20);
 
         //On ajoute le panel recherche au panel principal
         mainPan.add(panelHeader, BorderLayout.NORTH);
@@ -83,40 +123,42 @@ public class App extends JFrame{
         panelHeader.add(rechercheTextField);
 
         //On crée les bordures
-        Border border = BorderFactory.createLineBorder(Color.BLACK);
+        border = BorderFactory.createLineBorder(Color.BLACK);
 
-        //On crée un panel qui contiendra les produits
+        //On crée un panel qui contiendra les produits, on lui associe une bordure puis on defini le type de Layout
+        tablePanel = new JPanel();
         tablePanel.setBorder(border);
         tablePanel.setLayout(new GridLayout(0,2));
 
+        //On crée une boucle qui retournera autant de table qu'il y a de produit dans la base de données
+
         for(int i=1; i<=phonesList.size(); i++){
 
-            JPanel leftTablePanel = new JPanel();
+            //On crée le panel de gauche
+            leftTablePanel = new JPanel();
 
-            //On ajoute le panel de gauche avec le nom et le prix de l'article en définissant sa taille et sa position
+            //On defini le panel de gauche avec le nom et le prix de l'article en définissant sa taille, type de layout etc...
             leftTablePanel.setPreferredSize(new Dimension(360, 300 ));
             leftTablePanel.setLayout(new BoxLayout(leftTablePanel, BoxLayout.PAGE_AXIS));
             leftTablePanel.setBorder(border);
 
-
             //Creation des champs du tableau de gauche
-            JLabel phoneName=new JLabel("Nom :"+bdd.getPhoneName(i));
-            JLabel phonePrice= new JLabel("Prix :"+bdd.getPhonePrice(i)+" euros");
+            phoneName=new JLabel("Nom :"+bdd.getPhoneName(i));
+            phonePrice= new JLabel("Prix :"+bdd.getPhonePrice(i)+" euros");
 
+            //On crée le panel de droite
+            rightTablePanel = new JPanel();
 
-            JPanel rightTablePanel = new JPanel();
-
-            //On ajoute le panel de droite avec la photo, l'ajout au panier et les détails
+            //On defini le panel de droite avec la photo, la checkbox et les details de l'article en définissant, type de layout etc...
             rightTablePanel.setPreferredSize(new Dimension(360, 300));
             rightTablePanel.setLayout(new BorderLayout());
             rightTablePanel.setBorder(border);
 
-
             //On ajoute le panel de la photo et celui de l'ajout au panier dans le panel de droite
-            ImageIcon phonePicture= new ImageIcon(new ImageIcon("img/"+bdd.getPhonePicture(i)).getImage().getScaledInstance(250, 250, Image.SCALE_DEFAULT));
-            JLabel phonePictureLabel = new JLabel(phonePicture);
+            phonePicture= new ImageIcon(new ImageIcon("img/"+bdd.getPhonePicture(i)).getImage().getScaledInstance(250, 250, Image.SCALE_DEFAULT));
+            phonePictureLabel = new JLabel(phonePicture);
 
-            JPanel addToCartPanel = new JPanel();
+            addToCartPanel = new JPanel();
             //On ajoute les différents champs ajout au panier dans le label correspondant
             //Creation des champs du tableau de droite
             final JCheckBox addToCartCheckBox = new JCheckBox("Ajouter au panier");
@@ -136,7 +178,7 @@ public class App extends JFrame{
             //On ajoute le panel des produits au panel principal
             mainPan.add(tablePanel, BorderLayout.CENTER);
 
-            //Bouton detail :
+            //Bouton detail avec une ecoute sur le bouton :
             final int finalI = i;
             showMoreDetails.addActionListener(new ActionListener() {
                                                   public void actionPerformed(ActionEvent e) {
@@ -148,7 +190,7 @@ public class App extends JFrame{
                                               }
             );
 
-            //Checkbox ajout du téléphone
+            //Checkbox ajout du téléphone avec une ecoute sur la JCheckBox
             addToCartCheckBox.addActionListener(new ActionListener() {
                                                     public void actionPerformed(ActionEvent e) {
                                                         if (addToCartCheckBox.isSelected()) {
@@ -156,55 +198,27 @@ public class App extends JFrame{
                                                             if (rep == 0) {
                                                                 phoneCart.add(finalI);
                                                                 nbarticle++;
+                                                                System.out.println(phoneCart.size()+" / "+nbarticle);
                                                             } else {
                                                                 addToCartCheckBox.setSelected(false);
                                                             }
-
                                                         }
                                                     }
                                                 }
             );
-
-
         }
 
+
+
         //Creation de la scrollbar
-        JScrollPane scrollPanel = new JScrollPane(mainPan);
+        scrollPanel = new JScrollPane(mainPan);
         //On rend la fenetre scrollable
         this.add(scrollPanel);
-
-
-        //On ajoute un écouteur sur le JMenuItem Quitter
-        ListenerQuitter listenerQuitter = new ListenerQuitter();
-        quitter.addActionListener(listenerQuitter);
 
         //On ajoute un écouteur sur le JMenuItem Panier
         ListenerCart listenerCart = new ListenerCart();
         voirPanier.addActionListener(listenerCart);
 
-        //On ajoute un écouteur sur le JTextFlied Rechercher
-        ListenerSearch listenerSearch = new ListenerSearch();
-        rechercher.addActionListener(listenerSearch);
-    }
-
-    //Classe interne permettant de quitter l'application
-    public class ListenerQuitter implements ActionListener {
-        public void actionPerformed(ActionEvent arg0){
-            {
-                if(nbarticle==0)
-                {
-                    System.exit(0);
-                }
-                else
-                {
-                    int i = JOptionPane.showConfirmDialog(null, " Il y a des articles présents dans votre panier. \nSouhaitez vous quitter l'application ?", "Quitter", JOptionPane.YES_NO_OPTION);
-                    if( i == 0)
-                    {
-                        System.exit(0);
-                    }
-                }
-            }
-        }
     }
 
     //Classe interne permettant d'afficher le panier
@@ -254,53 +268,34 @@ public class App extends JFrame{
         }
     }
 
-    //Classe interne permettant d'afficher la recherche
-    public class ListenerSearch implements ActionListener
-    {
-        public void actionPerformed(ActionEvent arg0) {
-            String searchText = rechercheTextField.getText();
-            System.out.println(searchText);
-            ArrayList<Integer> resultatRecherche;
-            resultatRecherche = bdd.search(searchText);
-            if(searchText.isEmpty()){
-                JOptionPane.showMessageDialog(null,"Veuillez rentrer une recherche !");
-            }else {
-                JFrame window = new JFrame();
-                JPanel tablePanel = new JPanel();
-                Border border = BorderFactory.createLineBorder(Color.BLACK);
-                //window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                JScrollPane scrollPane= new JScrollPane(tablePanel);
 
-                window.setTitle("Resultat de recherche :"+searchText);
-                window.setSize(800, 600);
-                window.setLayout(new BorderLayout());
-
-                for(int i = 0;i<resultatRecherche.size();i++)
-                {
-                    JPanel leftTablePanel = new JPanel();
-                    JPanel rightTablePanel = new JPanel();
-                    JLabel phoneName= new JLabel("Nom : "+bdd.getPhoneName(resultatRecherche.get(i)));
-                    JLabel phonePrice = new JLabel("Prix : "+bdd.getPhonePrice(resultatRecherche.get(i))+" euros");
-                    leftTablePanel.add(phoneName);
-                    leftTablePanel.add(phonePrice);
-                    leftTablePanel.setBorder(border);
-                    leftTablePanel.setLayout(new BoxLayout(leftTablePanel, BoxLayout.PAGE_AXIS));
-
-                    ImageIcon phonePicture= new ImageIcon(new ImageIcon("img/"+bdd.getPhonePicture(resultatRecherche.get(i))).getImage().getScaledInstance(250, 250, Image.SCALE_DEFAULT));
-                    JLabel phonePictureLabel = new JLabel(phonePicture);
-                    rightTablePanel.add(phonePictureLabel);
-                    rightTablePanel.setBorder(border);
-
-                    tablePanel.add(leftTablePanel);
-                    tablePanel.add(rightTablePanel);
-
-                    tablePanel.setBorder(border);
-                    tablePanel.setLayout(new GridLayout(0,2,10,10));
-
-                    window.add(scrollPane);
-                    window.setVisible(true);
-                }
-            }
-        }
+    //Création des getters et setters
+    public JMenuItem getQuitter() {
+        return quitter;
     }
+
+    public JMenuItem getVoirPanier() {
+        return voirPanier;
+    }
+
+    public JTextField getRechercheTextField() {
+        return rechercheTextField;
+    }
+
+    public JButton getRechercher() {
+        return rechercher;
+    }
+
+    public ArrayList<Integer> getPhoneCart() {
+        return phoneCart;
+    }
+
+    public int getNbarticle() {
+        return nbarticle;
+    }
+
+
+
+
+
 }

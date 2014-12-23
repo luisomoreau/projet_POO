@@ -8,10 +8,12 @@ import java.util.ArrayList;
  */
 public class Bdd {
 
-    String url = "jdbc:mysql://localhost/projetPOO";
-    String login ="root";
-    String passwd = "mysql";
-    Connection connexion=null;
+    private String url = "jdbc:mysql://localhost/projetPOO";
+    private String login ="root";
+    private String passwd = "mysql";
+    private Connection connexion=null;
+    private Statement stmt;
+    private ResultSet resultset;
 
     public void connect(){
         try {
@@ -23,6 +25,17 @@ public class Bdd {
         e.printStackTrace();
         }
     }
+
+    //On libère les ressources
+    public void clear(){
+        try {
+            resultset.close();
+            connexion.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     //Ici, on compte le nombre de telephone dans la base de données et on enregistre les id dans une liste
     public ArrayList<Integer> getNumberOfPhones(){
         String requeteNumberOfPhones = "SELECT phoneID from telephone GROUP BY phoneID";
@@ -48,8 +61,6 @@ public class Bdd {
         String requetePhone = "SELECT * FROM telephone WHERE phoneID="+idPhone;
         ArrayList<String> phonePropreties = new ArrayList();
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            connexion = DriverManager.getConnection(url, login, passwd);
             Statement stmt = connexion.createStatement();
             ResultSet resultset = stmt.executeQuery(requetePhone);
             while (resultset.next()){
@@ -63,8 +74,6 @@ public class Bdd {
             }
             return phonePropreties;
 
-        }catch (ClassNotFoundException e) {
-            e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -75,16 +84,12 @@ public class Bdd {
         String requetePhoneName = "SELECT phoneName FROM telephone WHERE phoneID="+idPhone;
         String phoneName = "";
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            connexion = DriverManager.getConnection(url, login, passwd);
             Statement stmt = connexion.createStatement();
             ResultSet resultset = stmt.executeQuery(requetePhoneName);
             while (resultset.next()){
             phoneName = resultset.getString(1);
             return phoneName;}
 
-        }catch (ClassNotFoundException e) {
-            e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -95,17 +100,13 @@ public class Bdd {
         String requetePhonePrice = "SELECT phonePrice FROM telephone WHERE phoneID="+idPhone;
         String phonePrice = "";
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            connexion = DriverManager.getConnection(url, login, passwd);
             Statement stmt = connexion.createStatement();
             ResultSet resultset = stmt.executeQuery(requetePhonePrice);
             while (resultset.next()){
                 phonePrice = resultset.getString(1);
                 return phonePrice;}
 
-        }catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
+        }catch (SQLException e) {
             e.printStackTrace();
         }
         return phonePrice;
@@ -115,17 +116,13 @@ public class Bdd {
         String requetePhonePicture = "SELECT phonePicturePath FROM telephone WHERE phoneID="+idPhone;
         String phonePicture = "";
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            connexion = DriverManager.getConnection(url, login, passwd);
             Statement stmt = connexion.createStatement();
             ResultSet resultset = stmt.executeQuery(requetePhonePicture);
             while (resultset.next()){
                 phonePicture = resultset.getString(1);
                 return phonePicture;}
 
-        }catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
+        }catch (SQLException e) {
             e.printStackTrace();
         }
         return phonePicture;
@@ -135,17 +132,13 @@ public class Bdd {
         String requetePhoneScreenSize = "SELECT phoneScreenSize FROM telephone WHERE phoneID="+idPhone;
         String phoneScreenSize = "";
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            connexion = DriverManager.getConnection(url, login, passwd);
             Statement stmt = connexion.createStatement();
             ResultSet resultset = stmt.executeQuery(requetePhoneScreenSize);
             while (resultset.next()){
                 phoneScreenSize = resultset.getString(1);
                 return phoneScreenSize;}
 
-        }catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
+        }catch (SQLException e) {
             e.printStackTrace();
         }
         return phoneScreenSize;
@@ -155,17 +148,13 @@ public class Bdd {
         String requetePhoneBrand = "SELECT phoneBrand FROM telephone WHERE phoneID="+idPhone;
         String phoneBrand = "";
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            connexion = DriverManager.getConnection(url, login, passwd);
             Statement stmt = connexion.createStatement();
             ResultSet resultset = stmt.executeQuery(requetePhoneBrand);
             while (resultset.next()){
                 phoneBrand = resultset.getString(1);
                 return phoneBrand;}
 
-        }catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
+        }catch (SQLException e) {
             e.printStackTrace();
         }
         return phoneBrand;
@@ -175,17 +164,13 @@ public class Bdd {
         String requeteSearch = "SELECT phoneID FROM telephone WHERE phoneName LIKE '%"+searchfield+"%' GROUP BY phoneID";
         ArrayList<Integer> phoneID= new ArrayList<Integer>();
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            connexion = DriverManager.getConnection(url, login, passwd);
             Statement stmt = connexion.createStatement();
             ResultSet resultset = stmt.executeQuery(requeteSearch);
             while (resultset.next()){
                 phoneID.add(resultset.getInt(1));
                 return phoneID;}
 
-        }catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
+        }catch (SQLException e) {
             e.printStackTrace();
         }
         return phoneID;

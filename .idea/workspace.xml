@@ -2,13 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b5963f2-4bb9-4d39-a01a-555dcabde67f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_POO/View/App$ListenerCart.class" afterPath="$PROJECT_DIR$/out/production/Projet_POO/View/App$ListenerCart.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_POO/View/App$ListenerQuitter.class" afterPath="$PROJECT_DIR$/out/production/Projet_POO/View/App$ListenerQuitter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_POO/View/App$ListenerSearch.class" afterPath="$PROJECT_DIR$/out/production/Projet_POO/View/App$ListenerSearch.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Controller/ListenerCart.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Controller/ListenerQuitter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Controller/ListenerSearch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MainPrg/StartPrg.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MainPrg/Testing.java" />
+      <change type="DELETED" beforePath="C:\Users\Louis\ownCloud\HEI\ITI\poo\Projet_POO\out\production\Projet_POO\MainPrg\Main.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Louis\ownCloud\HEI\ITI\poo\Projet_POO\out\production\Projet_POO\Model\Phone.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Louis\ownCloud\HEI\ITI\poo\Projet_POO\out\production\Projet_POO\Model\PhoneList.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Louis\ownCloud\HEI\ITI\poo\Projet_POO\out\production\Projet_POO\View\App$ListenerCart.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Louis\ownCloud\HEI\ITI\poo\Projet_POO\out\production\Projet_POO\View\App$ListenerQuitter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Louis\ownCloud\HEI\ITI\poo\Projet_POO\out\production\Projet_POO\View\App$ListenerSearch.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Louis\ownCloud\HEI\ITI\poo\Projet_POO\src\MainPrg\Main.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Louis\ownCloud\HEI\ITI\poo\Projet_POO\src\Model\Phone.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Louis\ownCloud\HEI\ITI\poo\Projet_POO\src\Model\PhoneList.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_POO/View/App$1.class" afterPath="$PROJECT_DIR$/out/production/Projet_POO/View/App$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_POO/View/App.class" afterPath="$PROJECT_DIR$/out/production/Projet_POO/View/App.class" />
+      <change type="MODIFICATION" beforePath="C:\Users\Louis\ownCloud\HEI\ITI\poo\Projet_POO\out\production\Projet_POO\Model\Bdd.class" afterPath="C:\Users\Louis\ownCloud\HEI\ITI\poo\Projet_POO\out\production\Projet_POO\Model\Bdd.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/App.java" afterPath="$PROJECT_DIR$/src/View/App.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Bdd.java" afterPath="$PROJECT_DIR$/src/Model/Bdd.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainPrg/Main.java" afterPath="$PROJECT_DIR$/src/MainPrg/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Projet_POO_Louis_MOREAU.iws" />
@@ -73,15 +85,63 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/View/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3108108" vertical-offset="3591" max-vertical-offset="5304">
-              <caret line="218" column="18" selection-start-line="218" selection-start-column="18" selection-end-line="218" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.5964912" vertical-offset="918" max-vertical-offset="5219">
+              <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#670#679#0" expanded="true" />
-                <element signature="e#5056#5773#0" expanded="true" />
-                <element signature="e#5772#5773#0" expanded="true" />
-                <element signature="e#5880#6959#0" expanded="true" />
-                <element signature="e#6958#6959#0" expanded="true" />
+                <element signature="e#1547#1556#0" expanded="true" />
+                <element signature="e#6374#7091#0" expanded="true" />
+                <element signature="e#7090#7091#0" expanded="true" />
+                <element signature="e#7231#8427#0" expanded="true" />
+                <element signature="e#8426#8427#0" expanded="true" />
+                <element signature="e#10997#10998#0" expanded="true" />
+                <element signature="e#11027#11028#0" expanded="true" />
+                <element signature="e#11067#11068#0" expanded="true" />
+                <element signature="e#11100#11101#0" expanded="true" />
+                <element signature="e#11149#11150#0" expanded="true" />
+                <element signature="e#11190#11191#0" expanded="true" />
+                <element signature="e#11228#11229#0" expanded="true" />
+                <element signature="e#11261#11262#0" expanded="true" />
+                <element signature="e#11309#11310#0" expanded="true" />
+                <element signature="e#11341#11342#0" expanded="true" />
+                <element signature="e#11374#11375#0" expanded="true" />
+                <element signature="e#11406#11407#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListenerSearch.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/ListenerSearch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="973" max-vertical-offset="1343">
+              <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListenerCart.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/ListenerCart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1377">
+              <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListenerQuitter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/ListenerQuitter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="731">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,42 +150,21 @@
       <file leaf-file-name="Bdd.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/Bdd.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="381" max-vertical-offset="3383">
-              <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="404" max-vertical-offset="3128">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#890#899#0" expanded="true" />
-                <element signature="e#6684#6693#0" expanded="true" />
-                <marker date="1419303047692" expanded="true" signature="784:830" placeholder="SELECT phone..telephone..." />
-                <marker date="1419303047692" expanded="true" signature="1577:1600" placeholder="SELECT * FRO..telephone..." />
-                <marker date="1419303047692" expanded="true" signature="1577:1615" placeholder="SELECT * FRO..telephone..." />
-                <marker date="1419303047692" expanded="true" signature="2685:2731" placeholder="SELECT phone..telephone..." />
-                <marker date="1419303047692" expanded="true" signature="3433:3480" placeholder="SELECT phone..telephone..." />
-                <marker date="1419303047692" expanded="true" signature="4199:4252" placeholder="SELECT phone..telephone..." />
-                <marker date="1419303047692" expanded="true" signature="4987:5033" placeholder="SELECT phone..telephone..." />
-                <marker date="1419303047692" expanded="true" signature="4987:5039" placeholder="SELECT phone..telephone..." />
-                <marker date="1419303047692" expanded="true" signature="5779:5825" placeholder="SELECT phone..telephone..." />
-                <marker date="1419303047692" expanded="true" signature="5779:5826" placeholder="SELECT phone..telephone..." />
-                <marker date="1419303047692" expanded="true" signature="6545:6596" placeholder="SELECT phone..telephone..." />
-                <marker date="1419303047692" expanded="true" signature="6545:6598" placeholder="SELECT phone..telephone..." />
-                <marker date="1419303047692" expanded="true" signature="6545:6614" placeholder="SELECT phone..telephone..." />
-                <marker date="1419303047692" expanded="true" signature="6545:6614" placeholder="SELECT phone..telephone..." />
-                <marker date="1419303047692" expanded="true" signature="6545:6615" placeholder="SELECT phone..telephone..." />
-                <marker date="1419303047692" expanded="true" signature="6545:6632" placeholder="SELECT phone..telephone..." />
+                <element signature="e#1201#1210#0" expanded="true" />
+                <element signature="e#5779#5788#0" expanded="true" />
+                <marker date="1419366963030" expanded="true" signature="1095:1141" placeholder="SELECT phone..telephone..." />
+                <marker date="1419366963030" expanded="true" signature="1888:1926" placeholder="SELECT * FRO..telephone..." />
+                <marker date="1419366963030" expanded="true" signature="2794:2840" placeholder="SELECT phone..telephone..." />
+                <marker date="1419366963030" expanded="true" signature="3340:3387" placeholder="SELECT phone..telephone..." />
+                <marker date="1419366963030" expanded="true" signature="3903:3956" placeholder="SELECT phone..telephone..." />
+                <marker date="1419366963030" expanded="true" signature="4488:4540" placeholder="SELECT phone..telephone..." />
+                <marker date="1419366963030" expanded="true" signature="5077:5124" placeholder="SELECT phone..telephone..." />
+                <marker date="1419366963030" expanded="true" signature="5640:5727" placeholder="SELECT phone..telephone..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="projetPOO.telephone" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/789dccab/1ece06c3-1ca4-4c64-87b8-c7c7075d03f4/projetPOO..telephone">
-          <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="238">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -142,21 +181,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PhoneList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/PhoneList.java">
+      <file leaf-file-name="Testing.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MainPrg/Testing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MainPrg/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="130" max-vertical-offset="867">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="314" max-vertical-offset="697">
+              <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,32 +193,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="encodings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
+      <file leaf-file-name="StartPrg.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MainPrg/StartPrg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
-              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scope_settings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/scopes/scope_settings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Projet_POO.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet_POO.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -198,6 +209,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -212,7 +228,12 @@
         <option value="$PROJECT_DIR$/.idea/encodings.xml" />
         <option value="db-console:/789dccab/1ece06c3-1ca4-4c64-87b8-c7c7075d03f4/" />
         <option value="$PROJECT_DIR$/src/MainPrg/Main.java" />
+        <option value="$PROJECT_DIR$/src/Controller/ListenerQuitter.java" />
         <option value="$PROJECT_DIR$/src/Model/Bdd.java" />
+        <option value="$PROJECT_DIR$/src/Controller/ListenerSearch.java" />
+        <option value="$PROJECT_DIR$/src/MainPrg/StartPrg.java" />
+        <option value="$PROJECT_DIR$/src/MainPrg/Testing.java" />
+        <option value="$PROJECT_DIR$/src/Controller/ListenerCart.java" />
         <option value="$PROJECT_DIR$/src/View/App.java" />
       </list>
     </option>
@@ -338,18 +359,8 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Projet_POO_Louis_MOREAU" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projet_POO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -374,21 +385,27 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="MainPrg" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.StartPrg">
+    <configuration default="false" name="Testing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="MainPrg.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="MainPrg.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="MAIN_CLASS_NAME" value="MainPrg.Testing" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -646,12 +663,30 @@
       <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+    <configuration default="false" name="StartPrg" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="MainPrg.StartPrg" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Projet_POO" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.StartPrg" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Testing" />
     </list>
     <recent_temporary>
       <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Testing" />
       </list>
     </recent_temporary>
   </component>
@@ -671,7 +706,7 @@
       <option name="number" value="Default" />
       <updated>1418900790444</updated>
       <workItem from="1418900806737" duration="14763000" />
-      <workItem from="1419160365019" duration="54956000" />
+      <workItem from="1419160365019" duration="73363000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1418916173462</created>
@@ -745,11 +780,17 @@
       <option name="project" value="LOCAL" />
       <updated>1419298507551</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat - completed all functionalities&#10;&#10;View.Bdd :&#10;-&gt; Added the search function&#10;-&gt; test : doesn't work with multiples items...&#10;&#10;Issues : view only well appear when resizing the screen... still don't know why... :/&#10;&#10;Todo : move listeners into the controller package + improve code &#10;&#10;">
+      <created>1419303498773</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1419303498773</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69719000" />
+    <option name="totallyTimeSpent" value="88126000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -775,34 +816,34 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47960848" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47960848" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789558" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789558" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32843137" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26701966" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26701966" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -831,7 +872,8 @@
     <MESSAGE value="feat -created the model phone class&#10;&#10;Model.Bdd :&#10;-&gt; get number of phones&#10;-&gt; get a list of phone's characteristics&#10;-&gt; tests&#10;&#10;Issues : &#10;&#10;Todo : &#10;fix the last issues&#10;&#10;Add iteration to show multiple product on view" />
     <MESSAGE value="feat - completed view + model&#10;&#10;Model.Bdd :&#10;-&gt; got db info in view&#10;-&gt; added iteration in view&#10;-&gt; added detail popup&#10;-&gt; added sql dump&#10;-&gt; tests&#10;&#10;Issues : view only well appear when resizing the screen... still don't know why... :/&#10;&#10;Todo : move listeners into the controller package &#10;&#10;" />
     <MESSAGE value="feat - completed panier view&#10;&#10;View.Bdd :&#10;-&gt; Enabled items to be added to cart&#10;-&gt; test : works with multiples items&#10;&#10;Issues : view only well appear when resizing the screen... still don't know why... :/&#10;&#10;Todo : move listeners into the controller package &#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat - completed panier view&#10;&#10;View.Bdd :&#10;-&gt; Enabled items to be added to cart&#10;-&gt; test : works with multiples items&#10;&#10;Issues : view only well appear when resizing the screen... still don't know why... :/&#10;&#10;Todo : move listeners into the controller package &#10;&#10;" />
+    <MESSAGE value="feat - completed all functionalities&#10;&#10;View.Bdd :&#10;-&gt; Added the search function&#10;-&gt; test : doesn't work with multiples items...&#10;&#10;Issues : view only well appear when resizing the screen... still don't know why... :/&#10;&#10;Todo : move listeners into the controller package + improve code &#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat - completed all functionalities&#10;&#10;View.Bdd :&#10;-&gt; Added the search function&#10;-&gt; test : doesn't work with multiples items...&#10;&#10;Issues : view only well appear when resizing the screen... still don't know why... :/&#10;&#10;Todo : move listeners into the controller package + improve code &#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -848,11 +890,23 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#670#679#0" expanded="true" />
-            <element signature="e#5056#5773#0" expanded="true" />
-            <element signature="e#5772#5773#0" expanded="true" />
-            <element signature="e#5880#6959#0" expanded="true" />
-            <element signature="e#6958#6959#0" expanded="true" />
+            <element signature="e#1547#1556#0" expanded="true" />
+            <element signature="e#6374#7091#0" expanded="true" />
+            <element signature="e#7090#7091#0" expanded="true" />
+            <element signature="e#7231#8427#0" expanded="true" />
+            <element signature="e#8426#8427#0" expanded="true" />
+            <element signature="e#10997#10998#0" expanded="true" />
+            <element signature="e#11027#11028#0" expanded="true" />
+            <element signature="e#11067#11068#0" expanded="true" />
+            <element signature="e#11100#11101#0" expanded="true" />
+            <element signature="e#11149#11150#0" expanded="true" />
+            <element signature="e#11190#11191#0" expanded="true" />
+            <element signature="e#11228#11229#0" expanded="true" />
+            <element signature="e#11261#11262#0" expanded="true" />
+            <element signature="e#11309#11310#0" expanded="true" />
+            <element signature="e#11341#11342#0" expanded="true" />
+            <element signature="e#11374#11375#0" expanded="true" />
+            <element signature="e#11406#11407#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -865,7 +919,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainPrg/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/MainPrg/Testing.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="323">
           <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
@@ -943,47 +997,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Phone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1360">
-          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-          <folding>
-            <element signature="e#842#843#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-            <element signature="e#915#916#0" expanded="true" />
-            <element signature="e#953#954#0" expanded="true" />
-            <element signature="e#989#990#0" expanded="true" />
-            <element signature="e#1021#1022#0" expanded="true" />
-            <element signature="e#1071#1072#0" expanded="true" />
-            <element signature="e#1113#1114#0" expanded="true" />
-            <element signature="e#1150#1151#0" expanded="true" />
-            <element signature="e#1183#1184#0" expanded="true" />
-            <element signature="e#1235#1236#0" expanded="true" />
-            <element signature="e#1279#1280#0" expanded="true" />
-            <element signature="e#1322#1323#0" expanded="true" />
-            <element signature="e#1361#1362#0" expanded="true" />
-            <element signature="e#1425#1426#0" expanded="true" />
-            <element signature="e#1481#1482#0" expanded="true" />
-            <element signature="e#1523#1524#0" expanded="true" />
-            <element signature="e#1561#1562#0" expanded="true" />
-            <element signature="e#1623#1624#0" expanded="true" />
-            <element signature="e#1677#1678#0" expanded="true" />
-            <element signature="e#1714#1715#0" expanded="true" />
-            <element signature="e#1747#1748#0" expanded="true" />
-            <element signature="e#1799#1800#0" expanded="true" />
-            <element signature="e#1843#1844#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/PhoneList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/lg_g3.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1013,14 +1026,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/Projet_POO/View/App.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8376812" vertical-offset="51" max-vertical-offset="612">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/789dccab/1ece06c3-1ca4-4c64-87b8-c7c7075d03f4/projetPOO..telephone">
       <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state />
@@ -1042,38 +1047,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Bdd.java">
+    <entry file="file://$PROJECT_DIR$/src/Controller/ListenerQuitter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="381" max-vertical-offset="3383">
-          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="731">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#890#899#0" expanded="true" />
-            <element signature="e#6684#6693#0" expanded="true" />
-            <marker date="1419303047692" expanded="true" signature="784:830" placeholder="SELECT phone..telephone..." />
-            <marker date="1419303047692" expanded="true" signature="1577:1600" placeholder="SELECT * FRO..telephone..." />
-            <marker date="1419303047692" expanded="true" signature="1577:1615" placeholder="SELECT * FRO..telephone..." />
-            <marker date="1419303047692" expanded="true" signature="2685:2731" placeholder="SELECT phone..telephone..." />
-            <marker date="1419303047692" expanded="true" signature="3433:3480" placeholder="SELECT phone..telephone..." />
-            <marker date="1419303047692" expanded="true" signature="4199:4252" placeholder="SELECT phone..telephone..." />
-            <marker date="1419303047692" expanded="true" signature="4987:5033" placeholder="SELECT phone..telephone..." />
-            <marker date="1419303047692" expanded="true" signature="4987:5039" placeholder="SELECT phone..telephone..." />
-            <marker date="1419303047692" expanded="true" signature="5779:5825" placeholder="SELECT phone..telephone..." />
-            <marker date="1419303047692" expanded="true" signature="5779:5826" placeholder="SELECT phone..telephone..." />
-            <marker date="1419303047692" expanded="true" signature="6545:6596" placeholder="SELECT phone..telephone..." />
-            <marker date="1419303047692" expanded="true" signature="6545:6598" placeholder="SELECT phone..telephone..." />
-            <marker date="1419303047692" expanded="true" signature="6545:6614" placeholder="SELECT phone..telephone..." />
-            <marker date="1419303047692" expanded="true" signature="6545:6614" placeholder="SELECT phone..telephone..." />
-            <marker date="1419303047692" expanded="true" signature="6545:6615" placeholder="SELECT phone..telephone..." />
-            <marker date="1419303047692" expanded="true" signature="6545:6632" placeholder="SELECT phone..telephone..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainPrg/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/Model/Bdd.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="130" max-vertical-offset="867">
+        <state vertical-scroll-proportion="0.0" vertical-offset="404" max-vertical-offset="3128">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1201#1210#0" expanded="true" />
+            <element signature="e#5779#5788#0" expanded="true" />
+            <marker date="1419366963030" expanded="true" signature="1095:1141" placeholder="SELECT phone..telephone..." />
+            <marker date="1419366963030" expanded="true" signature="1888:1926" placeholder="SELECT * FRO..telephone..." />
+            <marker date="1419366963030" expanded="true" signature="2794:2840" placeholder="SELECT phone..telephone..." />
+            <marker date="1419366963030" expanded="true" signature="3340:3387" placeholder="SELECT phone..telephone..." />
+            <marker date="1419366963030" expanded="true" signature="3903:3956" placeholder="SELECT phone..telephone..." />
+            <marker date="1419366963030" expanded="true" signature="4488:4540" placeholder="SELECT phone..telephone..." />
+            <marker date="1419366963030" expanded="true" signature="5077:5124" placeholder="SELECT phone..telephone..." />
+            <marker date="1419366963030" expanded="true" signature="5640:5727" placeholder="SELECT phone..telephone..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ListenerSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="973" max-vertical-offset="1343">
+          <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainPrg/StartPrg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainPrg/Testing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="314" max-vertical-offset="697">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ListenerCart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1377">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1082,15 +1119,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3108108" vertical-offset="3591" max-vertical-offset="5304">
-          <caret line="218" column="18" selection-start-line="218" selection-start-column="18" selection-end-line="218" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.5964912" vertical-offset="918" max-vertical-offset="5219">
+          <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#670#679#0" expanded="true" />
-            <element signature="e#5056#5773#0" expanded="true" />
-            <element signature="e#5772#5773#0" expanded="true" />
-            <element signature="e#5880#6959#0" expanded="true" />
-            <element signature="e#6958#6959#0" expanded="true" />
+            <element signature="e#1547#1556#0" expanded="true" />
+            <element signature="e#6374#7091#0" expanded="true" />
+            <element signature="e#7090#7091#0" expanded="true" />
+            <element signature="e#7231#8427#0" expanded="true" />
+            <element signature="e#8426#8427#0" expanded="true" />
+            <element signature="e#10997#10998#0" expanded="true" />
+            <element signature="e#11027#11028#0" expanded="true" />
+            <element signature="e#11067#11068#0" expanded="true" />
+            <element signature="e#11100#11101#0" expanded="true" />
+            <element signature="e#11149#11150#0" expanded="true" />
+            <element signature="e#11190#11191#0" expanded="true" />
+            <element signature="e#11228#11229#0" expanded="true" />
+            <element signature="e#11261#11262#0" expanded="true" />
+            <element signature="e#11309#11310#0" expanded="true" />
+            <element signature="e#11341#11342#0" expanded="true" />
+            <element signature="e#11374#11375#0" expanded="true" />
+            <element signature="e#11406#11407#0" expanded="true" />
           </folding>
         </state>
       </provider>
