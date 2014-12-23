@@ -15,14 +15,30 @@ public class Main {
         App app=new App();
         //Bdd bdd=new Bdd();
 /*
-        ArrayList<Integer> phonesList = bdd.getNumberOfPhones();
+        ArrayList<Integer> list = bdd.search("a");
 
-        for(int i=0; i<phonesList.size(); i++){
-            System.out.println(bdd.getPhoneName(i));
-            System.out.println(bdd.getPhonePrice(i));
-            System.out.println(bdd.getPhonePicture(i));
-            System.out.println(bdd.getPhoneScreenSize(i));
-            System.out.println(bdd.getPhoneBrand(i));
+        for(int i=0; i<list.size(); i++){
+            System.out.println(list.size());
+            System.out.println(list.get(i));
+            System.out.println(bdd.getPhoneName(list.get(i)));
+            System.out.println(bdd.getPhonePrice(list.get(i)));
+            System.out.println(bdd.getPhonePicture(list.get(i)));
+            System.out.println(bdd.getPhoneScreenSize(list.get(i)));
+            System.out.println(bdd.getPhoneBrand(list.get(i)));
+            System.out.println("");
+        }
+
+        ArrayList<Integer> list = bdd.getNumberOfPhones();
+
+        for(int i=0; i<list.size(); i++){
+            System.out.println(list.size());
+
+            System.out.println(list.get(i));
+            System.out.println(bdd.getPhoneName(list.get(i)));
+            System.out.println(bdd.getPhonePrice(list.get(i)));
+            System.out.println(bdd.getPhonePicture(list.get(i)));
+            System.out.println(bdd.getPhoneScreenSize(list.get(i)));
+            System.out.println(bdd.getPhoneBrand(list.get(i)));
             System.out.println("");
         }*/
     }

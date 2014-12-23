@@ -18,6 +18,10 @@ public class App extends JFrame{
     Bdd bdd=new Bdd();
     ArrayList<Integer> phonesList = bdd.getNumberOfPhones();
 
+    //Creation des champs de recherche
+    JButton rechercher= new JButton("Rechercher");
+    JTextField rechercheTextField= new JTextField("Tapez le nom du produit voulu",20);
+
     //Création d'un tableau comprenant les telephone du panier
     public ArrayList<Integer> phoneCart = new ArrayList<Integer>();
     int nbarticle = phoneCart.size();
@@ -73,10 +77,6 @@ public class App extends JFrame{
 
         //On ajoute le panel recherche au panel principal
         mainPan.add(panelHeader, BorderLayout.NORTH);
-
-        //Creation des champs de recherche
-        JButton rechercher= new JButton("Rechercher");
-        JTextField rechercheTextField= new JTextField("Tapez le nom du produit voulu",20);
 
         //On ajoute les champs de recherche au panel Header
         panelHeader.add(rechercher);
@@ -184,7 +184,7 @@ public class App extends JFrame{
 
         //On ajoute un écouteur sur le JTextFlied Rechercher
         ListenerSearch listenerSearch = new ListenerSearch();
-        rechercheTextField.addActionListener(listenerSearch);
+        rechercher.addActionListener(listenerSearch);
     }
 
     //Classe interne permettant de quitter l'application
@@ -216,7 +216,7 @@ public class App extends JFrame{
                 JFrame window = new JFrame();
                 JPanel tablePanel = new JPanel();
                 Border border = BorderFactory.createLineBorder(Color.BLACK);
-                window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                //window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 JScrollPane scrollPane= new JScrollPane(tablePanel);
 
                 window.setTitle("Votre panier");
@@ -258,7 +258,49 @@ public class App extends JFrame{
     public class ListenerSearch implements ActionListener
     {
         public void actionPerformed(ActionEvent arg0) {
-            JOptionPane.showMessageDialog(null,"Test recherche");
+            String searchText = rechercheTextField.getText();
+            System.out.println(searchText);
+            ArrayList<Integer> resultatRecherche;
+            resultatRecherche = bdd.search(searchText);
+            if(searchText.isEmpty()){
+                JOptionPane.showMessageDialog(null,"Veuillez rentrer une recherche !");
+            }else {
+                JFrame window = new JFrame();
+                JPanel tablePanel = new JPanel();
+                Border border = BorderFactory.createLineBorder(Color.BLACK);
+                //window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                JScrollPane scrollPane= new JScrollPane(tablePanel);
+
+                window.setTitle("Resultat de recherche :"+searchText);
+                window.setSize(800, 600);
+                window.setLayout(new BorderLayout());
+
+                for(int i = 0;i<resultatRecherche.size();i++)
+                {
+                    JPanel leftTablePanel = new JPanel();
+                    JPanel rightTablePanel = new JPanel();
+                    JLabel phoneName= new JLabel("Nom : "+bdd.getPhoneName(resultatRecherche.get(i)));
+                    JLabel phonePrice = new JLabel("Prix : "+bdd.getPhonePrice(resultatRecherche.get(i))+" euros");
+                    leftTablePanel.add(phoneName);
+                    leftTablePanel.add(phonePrice);
+                    leftTablePanel.setBorder(border);
+                    leftTablePanel.setLayout(new BoxLayout(leftTablePanel, BoxLayout.PAGE_AXIS));
+
+                    ImageIcon phonePicture= new ImageIcon(new ImageIcon("img/"+bdd.getPhonePicture(resultatRecherche.get(i))).getImage().getScaledInstance(250, 250, Image.SCALE_DEFAULT));
+                    JLabel phonePictureLabel = new JLabel(phonePicture);
+                    rightTablePanel.add(phonePictureLabel);
+                    rightTablePanel.setBorder(border);
+
+                    tablePanel.add(leftTablePanel);
+                    tablePanel.add(rightTablePanel);
+
+                    tablePanel.setBorder(border);
+                    tablePanel.setLayout(new GridLayout(0,2,10,10));
+
+                    window.add(scrollPane);
+                    window.setVisible(true);
+                }
+            }
         }
     }
 }

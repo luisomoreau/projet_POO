@@ -1,31 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b5963f2-4bb9-4d39-a01a-555dcabde67f" name="Default" comment="feat - completed view + model&#10;&#10;Model.Bdd :&#10;-&gt; got db info in view&#10;-&gt; added iteration in view&#10;-&gt; added detail popup&#10;-&gt; added sql dump&#10;-&gt; tests&#10;&#10;Issues : view only well appear when resizing the screen... still don't know why... :/&#10;&#10;Todo : move listeners into the controller package &#10;&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Projet_POO/View/App$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Projet_POO/View/App$1_conflict-20141223-004938.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Projet_POO/View/App$ListenerCart.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Projet_POO/View/App$ListenerQuitter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Projet_POO/View/App$ListenerSearch.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Projet_POO/View/App.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Projet_POO/Model/Bdd.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Projet_POO/MainPrg/Main.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Projet_POO/Model/Phone.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Projet_POO/Model/PhoneList.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/galaxy_s3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/galaxy_s4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/iphone6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/lg_g3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/nokia_3310.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/one_plus.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/telephone.sql" />
+    <list default="true" id="8b5963f2-4bb9-4d39-a01a-555dcabde67f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_POO/View/App$ListenerCart.class" afterPath="$PROJECT_DIR$/out/production/Projet_POO/View/App$ListenerCart.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_POO/View/App$ListenerQuitter.class" afterPath="$PROJECT_DIR$/out/production/Projet_POO/View/App$ListenerQuitter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_POO/View/App$ListenerSearch.class" afterPath="$PROJECT_DIR$/out/production/Projet_POO/View/App$ListenerSearch.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_POO/View/App.class" afterPath="$PROJECT_DIR$/out/production/Projet_POO/View/App.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/App.java" afterPath="$PROJECT_DIR$/src/View/App.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Bdd.java" afterPath="$PROJECT_DIR$/src/Model/Bdd.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainPrg/Main.java" afterPath="$PROJECT_DIR$/src/MainPrg/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/PhoneList.java" afterPath="$PROJECT_DIR$/src/Model/PhoneList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Projet_POO_Louis_MOREAU.iws" />
@@ -90,15 +73,15 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/View/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334" vertical-offset="2334" max-vertical-offset="3859">
-              <caret line="144" column="246" selection-start-line="144" selection-start-column="246" selection-end-line="144" selection-end-column="246" />
+            <state vertical-scroll-proportion="0.3108108" vertical-offset="3591" max-vertical-offset="5304">
+              <caret line="218" column="18" selection-start-line="218" selection-start-column="18" selection-end-line="218" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#492#501#0" expanded="true" />
-                <element signature="e#5062#5779#0" expanded="true" />
-                <element signature="e#5778#5779#0" expanded="true" />
-                <element signature="e#8187#8188#0" expanded="true" />
-                <element signature="e#8263#8264#0" expanded="true" />
+                <element signature="e#670#679#0" expanded="true" />
+                <element signature="e#5056#5773#0" expanded="true" />
+                <element signature="e#5772#5773#0" expanded="true" />
+                <element signature="e#5880#6959#0" expanded="true" />
+                <element signature="e#6958#6959#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,21 +90,53 @@
       <file leaf-file-name="Bdd.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/Bdd.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1857" max-vertical-offset="3060">
-              <caret line="115" column="61" selection-start-line="115" selection-start-column="61" selection-end-line="115" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="381" max-vertical-offset="3383">
+              <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#909#918#0" expanded="true" />
-                <marker date="1419285061756" expanded="true" signature="784:830" placeholder="SELECT phone..telephone..." />
-                <marker date="1419285061756" expanded="true" signature="1596:1619" placeholder="SELECT * FRO..telephone..." />
-                <marker date="1419285061756" expanded="true" signature="1596:1634" placeholder="SELECT * FRO..telephone..." />
-                <marker date="1419285061756" expanded="true" signature="2704:2750" placeholder="SELECT phone..telephone..." />
-                <marker date="1419285061756" expanded="true" signature="3452:3499" placeholder="SELECT phone..telephone..." />
-                <marker date="1419285061756" expanded="true" signature="4218:4271" placeholder="SELECT phone..telephone..." />
-                <marker date="1419285061756" expanded="true" signature="5006:5052" placeholder="SELECT phone..telephone..." />
-                <marker date="1419285061756" expanded="true" signature="5006:5058" placeholder="SELECT phone..telephone..." />
-                <marker date="1419285061756" expanded="true" signature="5798:5844" placeholder="SELECT phone..telephone..." />
-                <marker date="1419285061756" expanded="true" signature="5798:5845" placeholder="SELECT phone..telephone..." />
+                <element signature="e#890#899#0" expanded="true" />
+                <element signature="e#6684#6693#0" expanded="true" />
+                <marker date="1419303047692" expanded="true" signature="784:830" placeholder="SELECT phone..telephone..." />
+                <marker date="1419303047692" expanded="true" signature="1577:1600" placeholder="SELECT * FRO..telephone..." />
+                <marker date="1419303047692" expanded="true" signature="1577:1615" placeholder="SELECT * FRO..telephone..." />
+                <marker date="1419303047692" expanded="true" signature="2685:2731" placeholder="SELECT phone..telephone..." />
+                <marker date="1419303047692" expanded="true" signature="3433:3480" placeholder="SELECT phone..telephone..." />
+                <marker date="1419303047692" expanded="true" signature="4199:4252" placeholder="SELECT phone..telephone..." />
+                <marker date="1419303047692" expanded="true" signature="4987:5033" placeholder="SELECT phone..telephone..." />
+                <marker date="1419303047692" expanded="true" signature="4987:5039" placeholder="SELECT phone..telephone..." />
+                <marker date="1419303047692" expanded="true" signature="5779:5825" placeholder="SELECT phone..telephone..." />
+                <marker date="1419303047692" expanded="true" signature="5779:5826" placeholder="SELECT phone..telephone..." />
+                <marker date="1419303047692" expanded="true" signature="6545:6596" placeholder="SELECT phone..telephone..." />
+                <marker date="1419303047692" expanded="true" signature="6545:6598" placeholder="SELECT phone..telephone..." />
+                <marker date="1419303047692" expanded="true" signature="6545:6614" placeholder="SELECT phone..telephone..." />
+                <marker date="1419303047692" expanded="true" signature="6545:6614" placeholder="SELECT phone..telephone..." />
+                <marker date="1419303047692" expanded="true" signature="6545:6615" placeholder="SELECT phone..telephone..." />
+                <marker date="1419303047692" expanded="true" signature="6545:6632" placeholder="SELECT phone..telephone..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="projetPOO.telephone" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/789dccab/1ece06c3-1ca4-4c64-87b8-c7c7075d03f4/projetPOO..telephone">
+          <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="238">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MySQL - projetPOO@localhost" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://db-console:/789dccab/1ece06c3-1ca4-4c64-87b8-c7c7075d03f4/">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+              <caret line="0" column="74" selection-start-line="0" selection-start-column="74" selection-end-line="0" selection-end-column="74" />
+              <folding>
+                <marker date="0" expanded="true" signature="0:74" placeholder="SELECT phone..telephone..." />
               </folding>
             </state>
           </provider>
@@ -137,21 +152,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Todo.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Todo.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
-              <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainPrg/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="595">
-              <caret line="24" column="51" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="130" max-vertical-offset="867">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -189,51 +194,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Phone.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/Phone.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1360">
-              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-              <folding>
-                <element signature="e#842#843#0" expanded="true" />
-                <element signature="e#872#873#0" expanded="true" />
-                <element signature="e#915#916#0" expanded="true" />
-                <element signature="e#953#954#0" expanded="true" />
-                <element signature="e#989#990#0" expanded="true" />
-                <element signature="e#1021#1022#0" expanded="true" />
-                <element signature="e#1071#1072#0" expanded="true" />
-                <element signature="e#1113#1114#0" expanded="true" />
-                <element signature="e#1150#1151#0" expanded="true" />
-                <element signature="e#1183#1184#0" expanded="true" />
-                <element signature="e#1235#1236#0" expanded="true" />
-                <element signature="e#1279#1280#0" expanded="true" />
-                <element signature="e#1322#1323#0" expanded="true" />
-                <element signature="e#1361#1362#0" expanded="true" />
-                <element signature="e#1425#1426#0" expanded="true" />
-                <element signature="e#1481#1482#0" expanded="true" />
-                <element signature="e#1523#1524#0" expanded="true" />
-                <element signature="e#1561#1562#0" expanded="true" />
-                <element signature="e#1623#1624#0" expanded="true" />
-                <element signature="e#1677#1678#0" expanded="true" />
-                <element signature="e#1714#1715#0" expanded="true" />
-                <element signature="e#1747#1748#0" expanded="true" />
-                <element signature="e#1799#1800#0" expanded="true" />
-                <element signature="e#1843#1844#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MySQL - projetPOO@localhost" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://db-console:/789dccab/1ece06c3-1ca4-4c64-87b8-c7c7075d03f4/">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -248,10 +208,11 @@
         <option value="$PROJECT_DIR$/.idea/dataSources.local.xml" />
         <option value="$PROJECT_DIR$/src/Model/Phone.java" />
         <option value="$PROJECT_DIR$/src/Model/PhoneList.java" />
-        <option value="$PROJECT_DIR$/src/Model/Bdd.java" />
         <option value="dbtable:/789dccab/1ece06c3-1ca4-4c64-87b8-c7c7075d03f4/projetPOO..telephone" />
         <option value="$PROJECT_DIR$/.idea/encodings.xml" />
+        <option value="db-console:/789dccab/1ece06c3-1ca4-4c64-87b8-c7c7075d03f4/" />
         <option value="$PROJECT_DIR$/src/MainPrg/Main.java" />
+        <option value="$PROJECT_DIR$/src/Model/Bdd.java" />
         <option value="$PROJECT_DIR$/src/View/App.java" />
       </list>
     </option>
@@ -710,7 +671,7 @@
       <option name="number" value="Default" />
       <updated>1418900790444</updated>
       <workItem from="1418900806737" duration="14763000" />
-      <workItem from="1419160365019" duration="47140000" />
+      <workItem from="1419160365019" duration="54956000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1418916173462</created>
@@ -772,11 +733,23 @@
       <option name="project" value="LOCAL" />
       <updated>1419281992477</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat - completed view + model&#10;&#10;Model.Bdd :&#10;-&gt; got db info in view&#10;-&gt; added iteration in view&#10;-&gt; added detail popup&#10;-&gt; added sql dump&#10;-&gt; tests&#10;&#10;Issues : view only well appear when resizing the screen... still don't know why... :/&#10;&#10;Todo : move listeners into the controller package &#10;&#10;">
+      <created>1419295024400</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1419295024400</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat - completed panier view&#10;&#10;View.Bdd :&#10;-&gt; Enabled items to be added to cart&#10;-&gt; test : works with multiples items&#10;&#10;Issues : view only well appear when resizing the screen... still don't know why... :/&#10;&#10;Todo : move listeners into the controller package &#10;&#10;">
+      <created>1419298507551</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1419298507551</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61903000" />
+    <option name="totallyTimeSpent" value="69719000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -800,7 +773,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47960848" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -813,10 +786,11 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789558" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26701966" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -855,7 +829,9 @@
     <MESSAGE value="feat -add listeners in view&#10;&#10;View.App :&#10;-&gt; add listener quitter&#10;-&gt; add listener voirPanier&#10;-&gt; add listener Rechercher&#10;&#10;Model.BddConnexion :&#10;-&gt;Created class&#10;&#10;Issues : need to resize the page for the picture to appear...&#10;&#10;Todo : &#10;fix the last issues&#10;Connect the database and get product in an array list&#10;Add iteration to show multiple product" />
     <MESSAGE value="feat -created the database model&#10;&#10;Model.Bdd :&#10;-&gt; add created the database model&#10;-&gt; fix driver dependencies (.idea/libraries)&#10;&#10;Issues : fix sql errors to get results in an arraylist...&#10;&#10;Todo : &#10;fix the last issues&#10;Connect the database and get product in an array list&#10;Add iteration to show multiple product on view" />
     <MESSAGE value="feat -created the model phone class&#10;&#10;Model.Bdd :&#10;-&gt; get number of phones&#10;-&gt; get a list of phone's characteristics&#10;-&gt; tests&#10;&#10;Issues : &#10;&#10;Todo : &#10;fix the last issues&#10;&#10;Add iteration to show multiple product on view" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat -created the model phone class&#10;&#10;Model.Bdd :&#10;-&gt; get number of phones&#10;-&gt; get a list of phone's characteristics&#10;-&gt; tests&#10;&#10;Issues : &#10;&#10;Todo : &#10;fix the last issues&#10;&#10;Add iteration to show multiple product on view" />
+    <MESSAGE value="feat - completed view + model&#10;&#10;Model.Bdd :&#10;-&gt; got db info in view&#10;-&gt; added iteration in view&#10;-&gt; added detail popup&#10;-&gt; added sql dump&#10;-&gt; tests&#10;&#10;Issues : view only well appear when resizing the screen... still don't know why... :/&#10;&#10;Todo : move listeners into the controller package &#10;&#10;" />
+    <MESSAGE value="feat - completed panier view&#10;&#10;View.Bdd :&#10;-&gt; Enabled items to be added to cart&#10;-&gt; test : works with multiples items&#10;&#10;Issues : view only well appear when resizing the screen... still don't know why... :/&#10;&#10;Todo : move listeners into the controller package &#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat - completed panier view&#10;&#10;View.Bdd :&#10;-&gt; Enabled items to be added to cart&#10;-&gt; test : works with multiples items&#10;&#10;Issues : view only well appear when resizing the screen... still don't know why... :/&#10;&#10;Todo : move listeners into the controller package &#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -872,11 +848,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#492#501#0" expanded="true" />
-            <element signature="e#5062#5779#0" expanded="true" />
-            <element signature="e#5778#5779#0" expanded="true" />
-            <element signature="e#8187#8188#0" expanded="true" />
-            <element signature="e#8263#8264#0" expanded="true" />
+            <element signature="e#670#679#0" expanded="true" />
+            <element signature="e#5056#5773#0" expanded="true" />
+            <element signature="e#5772#5773#0" expanded="true" />
+            <element signature="e#5880#6959#0" expanded="true" />
+            <element signature="e#6958#6959#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -959,14 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://db-console:/789dccab/1ece06c3-1ca4-4c64-87b8-c7c7075d03f4/">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="383">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/dataSources.local.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="370">
@@ -1016,38 +984,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Bdd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1857" max-vertical-offset="3060">
-          <caret line="115" column="61" selection-start-line="115" selection-start-column="61" selection-end-line="115" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#909#918#0" expanded="true" />
-            <marker date="1419285061756" expanded="true" signature="784:830" placeholder="SELECT phone..telephone..." />
-            <marker date="1419285061756" expanded="true" signature="1596:1619" placeholder="SELECT * FRO..telephone..." />
-            <marker date="1419285061756" expanded="true" signature="1596:1634" placeholder="SELECT * FRO..telephone..." />
-            <marker date="1419285061756" expanded="true" signature="2704:2750" placeholder="SELECT phone..telephone..." />
-            <marker date="1419285061756" expanded="true" signature="3452:3499" placeholder="SELECT phone..telephone..." />
-            <marker date="1419285061756" expanded="true" signature="4218:4271" placeholder="SELECT phone..telephone..." />
-            <marker date="1419285061756" expanded="true" signature="5006:5052" placeholder="SELECT phone..telephone..." />
-            <marker date="1419285061756" expanded="true" signature="5006:5058" placeholder="SELECT phone..telephone..." />
-            <marker date="1419285061756" expanded="true" signature="5798:5844" placeholder="SELECT phone..telephone..." />
-            <marker date="1419285061756" expanded="true" signature="5798:5845" placeholder="SELECT phone..telephone..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/789dccab/1ece06c3-1ca4-4c64-87b8-c7c7075d03f4/projetPOO..telephone">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/lg_g3.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1077,10 +1013,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/Projet_POO/View/App.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8376812" vertical-offset="51" max-vertical-offset="612">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/789dccab/1ece06c3-1ca4-4c64-87b8-c7c7075d03f4/projetPOO..telephone">
+      <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="238">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://db-console:/789dccab/1ece06c3-1ca4-4c64-87b8-c7c7075d03f4/">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+          <caret line="0" column="74" selection-start-line="0" selection-start-column="74" selection-end-line="0" selection-end-column="74" />
+          <folding>
+            <marker date="0" expanded="true" signature="0:74" placeholder="SELECT phone..telephone..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Bdd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="381" max-vertical-offset="3383">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#890#899#0" expanded="true" />
+            <element signature="e#6684#6693#0" expanded="true" />
+            <marker date="1419303047692" expanded="true" signature="784:830" placeholder="SELECT phone..telephone..." />
+            <marker date="1419303047692" expanded="true" signature="1577:1600" placeholder="SELECT * FRO..telephone..." />
+            <marker date="1419303047692" expanded="true" signature="1577:1615" placeholder="SELECT * FRO..telephone..." />
+            <marker date="1419303047692" expanded="true" signature="2685:2731" placeholder="SELECT phone..telephone..." />
+            <marker date="1419303047692" expanded="true" signature="3433:3480" placeholder="SELECT phone..telephone..." />
+            <marker date="1419303047692" expanded="true" signature="4199:4252" placeholder="SELECT phone..telephone..." />
+            <marker date="1419303047692" expanded="true" signature="4987:5033" placeholder="SELECT phone..telephone..." />
+            <marker date="1419303047692" expanded="true" signature="4987:5039" placeholder="SELECT phone..telephone..." />
+            <marker date="1419303047692" expanded="true" signature="5779:5825" placeholder="SELECT phone..telephone..." />
+            <marker date="1419303047692" expanded="true" signature="5779:5826" placeholder="SELECT phone..telephone..." />
+            <marker date="1419303047692" expanded="true" signature="6545:6596" placeholder="SELECT phone..telephone..." />
+            <marker date="1419303047692" expanded="true" signature="6545:6598" placeholder="SELECT phone..telephone..." />
+            <marker date="1419303047692" expanded="true" signature="6545:6614" placeholder="SELECT phone..telephone..." />
+            <marker date="1419303047692" expanded="true" signature="6545:6614" placeholder="SELECT phone..telephone..." />
+            <marker date="1419303047692" expanded="true" signature="6545:6615" placeholder="SELECT phone..telephone..." />
+            <marker date="1419303047692" expanded="true" signature="6545:6632" placeholder="SELECT phone..telephone..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MainPrg/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="595">
-          <caret line="24" column="51" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="130" max-vertical-offset="867">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1089,15 +1082,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="2334" max-vertical-offset="3859">
-          <caret line="144" column="246" selection-start-line="144" selection-start-column="246" selection-end-line="144" selection-end-column="246" />
+        <state vertical-scroll-proportion="0.3108108" vertical-offset="3591" max-vertical-offset="5304">
+          <caret line="218" column="18" selection-start-line="218" selection-start-column="18" selection-end-line="218" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#492#501#0" expanded="true" />
-            <element signature="e#5062#5779#0" expanded="true" />
-            <element signature="e#5778#5779#0" expanded="true" />
-            <element signature="e#8187#8188#0" expanded="true" />
-            <element signature="e#8263#8264#0" expanded="true" />
+            <element signature="e#670#679#0" expanded="true" />
+            <element signature="e#5056#5773#0" expanded="true" />
+            <element signature="e#5772#5773#0" expanded="true" />
+            <element signature="e#5880#6959#0" expanded="true" />
+            <element signature="e#6958#6959#0" expanded="true" />
           </folding>
         </state>
       </provider>

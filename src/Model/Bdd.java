@@ -26,7 +26,6 @@ public class Bdd {
     //Ici, on compte le nombre de telephone dans la base de données et on enregistre les id dans une liste
     public ArrayList<Integer> getNumberOfPhones(){
         String requeteNumberOfPhones = "SELECT phoneID from telephone GROUP BY phoneID";
-        connect();
         ArrayList<Integer> numberOfPhones = new ArrayList<Integer>();
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -170,5 +169,25 @@ public class Bdd {
             e.printStackTrace();
         }
         return phoneBrand;
+    }
+
+    public ArrayList<Integer> search(String searchfield){
+        String requeteSearch = "SELECT phoneID FROM telephone WHERE phoneName LIKE '%"+searchfield+"%' GROUP BY phoneID";
+        ArrayList<Integer> phoneID= new ArrayList<Integer>();
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            connexion = DriverManager.getConnection(url, login, passwd);
+            Statement stmt = connexion.createStatement();
+            ResultSet resultset = stmt.executeQuery(requeteSearch);
+            while (resultset.next()){
+                phoneID.add(resultset.getInt(1));
+                return phoneID;}
+
+        }catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return phoneID;
     }
 }
